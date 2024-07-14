@@ -1,0 +1,215 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Oscar Redondo
+    tagline: Python Django Developer, DevOps, SRE, & Automation Engineer
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: o.redondo91@gmail.com
+    phone: +34 667097141
+    timezone: Europa/Madrid Timezone
+    citizenship:
+    website: oredondo.github.io/online-cv/ #do not add http://
+    linkedin: oscarredondodevops
+    xing: 
+    github: oredondo
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter: 
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+    pdf: 
+
+    languages:
+      title: Idiomas
+      info:
+        - idiom: Español
+          level: Nativo
+
+        - idiom: Ingles
+          level: Avanzado
+
+    interests:
+      title: Intereses
+      info:
+        - item: Motociclismo
+          link:
+
+        - item: Snowboarding
+          link:
+
+        - item: Senderismo
+          link:
+
+        - item: Música
+          link: 
+
+career-profile:
+    title: Perfil de carrera
+    summary: |
+      Ingeniero de software con más de 9 años de experiencia en el desarrollo de aplicaciones web utilizando
+       Python y Django, así como en la implementación y gestión de prácticas DevOps y de confiabilidad del sitio (SRE). 
+      Apasionado por crear soluciones tecnológicas eficientes y escalables, mi objetivo es mejorar continuamente la calidad 
+      del software y la infraestructura, optimizando procesos y asegurando una operación continua y sin interrupciones.
+      Experto en generar una trazabilidad de la infrastructura y generar flujos de trabajos y las mejores practicas.
+      Actualmente en residiendo en Madrid con perfil de prefetentemente de Teletrabajo.
+
+
+
+education:
+    title: Educación
+    info:
+      - degree: Grado en Ingeniería Electrónica de Comunicaciones
+        university: Universidad Politécnica de Madrid
+        time: 2009 - 2020
+        details: |
+          Elaboración, desarrollo y gestión de proyectos para el diseño, la concepción, despliegue y explotación de redes, servicios y aplicaciones de Telecomunicación.
+          Adquirir la formación científica y tecnológica, sobre materiales y componentes electrónicos, necesaria para el ejercicio profesional en el diseño y desarrollo de sistemas electrónicos en el sector de las telecomunicaciones.
+          Realizar la especificación, simulación, diseño, desarrollo, diagnóstico, documentación y puesta a punto de circuitos, sistemas y productos con aplicación en el ámbito de la informática y de las telecomunicaciones.
+          Diseñar sistemas digitales apoyándose en las tecnologías basadas en la lógica programable, circuitos integrados de aplicación específica y microprocesadores.
+          Desarrollar el hardware analógico y digital necesario que permita captar, adaptar, generar, procesar o digitalizar señales de diferentes características.
+          Diseñar aplicaciones orientadas a sistemas de medida y control electrónico.
+          Definir especificaciones de seguridad, calidad y fiabilidad de los productos electrónicos. Describir las pruebas y ensayos de acuerdo a las normativas reguladoras.
+          Integrar adecuadamente soluciones de tipo hardware y de tipo software, para alcanzar la máxima eficacia en el desarrollo de los sistemas electrónicos.
+
+experiences:
+    title: Experecias
+    info:
+      - role: Python Django Developer, DevOps, SER and Automation Engineer
+        time: 2017 - Present
+        company: BBVA Technologies, Madrid
+        details: |
+          Diseño y desarrollo de aplicaciones web robustas utilizando Python y el framework Django.
+          Implementación de APIs RESTful para facilitar la integración con otros sistemas.
+          Automatización de pipelines de CI/CD utilizando herramientas como Jenkins, GitLab CI/CD...
+          Configuración y administración de infraestructura en la nube (AWS, Rhv Manager, Openstack, physical).
+          Implementación de prácticas de Infraestructura como Código (IaC) utilizando Ansible.
+          Gestión de incidentes y resolución de problemas críticos en tiempo real, asegurando la alta disponibilidad y resiliencia del sistema.
+          Análisis y mejora continua del rendimiento y la seguridad de las aplicaciones y la infraestructura.
+
+
+      - role: OpenStack Administrator & Developer at Oesia
+        time: 2015 - 2017
+        company: Oesia, Madrid
+        details: |
+          Desarrollo de herramienta de CloudComputing.
+          Basado en Openstack y ceph.           
+
+# certifications:
+#       title: Certifications
+#       list:
+#         - name: CV Builder
+#           start: 2020
+#           end: 2021
+#           organization: Microsoft
+#           credentialid: 111-222
+#           credentialurl: www.google.com
+#           credentialname: Google
+#           details: |
+#             Details about cert. Lorem ipsum dolor sit amet, consectetur
+#             adipiscing elit.
+#             Nullam eget orci purus. Nullam ultrices neque nibh.
+#             Aenean fermentum, felis vulputate suscipit accumsan,
+#             sem enim bibendum augue, sed convallis arcu lacus at dui.
+#             Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#             Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#             Praesent venenatis erat non augue suscipit consectetur.
+
+#             Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+#             fringilla vel. Ut euismod, sem sed vulputate venenatis,
+#             justo diam viverra velit, sed rhoncus leo leo eu justo.
+#             Suspendisse placerat risus ante, sed porta nisi blandit at.
+
+projects:
+    title: Logros Destacados
+    intro: >
+      Proyectos destacados que he liderado y llevado a cabo con éxito a lo largo de mi carrera.
+
+    assignments:
+      - title: Orion
+        tagline: "Creación de Orion, una aplicación para la gestión y auditoría de la infraestructura del banco, que administra más de 4000 máquinas en diversas plataformas como on-premise, AWS, hardware físico y OpenStack.
+                  Generando una api para interectuar con la informacion en tiempo real. Gesiona la operación de toda la infraestructura
+                  asi como la subida a producción de todo ASO y APX, con miles de operaciones diarias."
+
+      - title: Jenkins pipelines
+        tagline: "Generación de pipelines y librerias complejas que permiten la generación de infrastructura de forma ordenada y efectiva."
+
+      - title: Integración F5 con Openstack
+        tagline: "Tras la deprecación de la integración de F5 con OpenStack, se generó una API RESTful que permitió la integración de ambos productos."
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Python
+        level: 85%
+      - name: Django
+        level: 90%
+      - name: Flask
+        level: 75%
+      - name: Unittest
+        level: 60%
+      - name: Celery
+        level: 75%
+         
+      - name: Javascript & jQuery
+        level: 70%
+
+      - name: HTML5 & CSS
+        level: 70%
+      
+      - name: Ansible
+        level: 85%
+      - name: Openstak
+        level: 80%
+      - name: AWS
+        level: 65%
+      - name: Azure
+        level: 40%
+      - name: Kubernetes
+        level: 50%
+      - name: Docker
+        level: 80%
+      - name: Infoblox
+        level: 55%
+      - name: Django Rest Framework
+        level: 80%
+      - name: Postgres
+        level: 65%
+      - name: MongoDB
+        level: 80%
+      - name: Linux
+        level: 75%
+      - name:  Java
+        level: 45%
+      - name: Groovy
+        level: 75%
+      - name: Jenkins
+        level: 75%
+      - name: Git
+        level: 85%
+      - name: F5 Load Balancer
+        level: 30%
+
+      - name: Comunicación Efectiva
+        level: 75%  
+      - name: Trabajo en Equipo
+        level: 95%
+      - name: Adaptabilidad
+        level: 95%
+      - name: Capacidad de Aprendizaje
+        level: 95%
+      - name: Liderazgo
+        level: 70%
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
