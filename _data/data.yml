@@ -31,43 +31,44 @@ sidebar:
     pdf: 
 
     languages:
-      title: Idiomas
+      title: Languages
       info:
-        - idiom: Español
-          level: Nativo
+        - idiom: Spanish
+          level: Native
 
-        - idiom: Ingles
-          level: Avanzado
+        - idiom: English
+          level: Professional
 
     interests:
-      title: Intereses
+      title: Interests
       info:
-        - item: Motociclismo
+        - item: Motorbike
           link:
 
         - item: Snowboarding
           link:
 
-        - item: Senderismo
+        - item: Hiking
           link:
 
-        - item: Música
+        - item: Music
           link: 
 
 career-profile:
-    title: Perfil de carrera
+    title: Career Profile
     summary: |
-      Ingeniero de software con más de 9 años de experiencia en el desarrollo de aplicaciones web utilizando
-       Python y Django, así como en la implementación y gestión de prácticas DevOps y de confiabilidad del sitio (SRE). 
-      Apasionado por crear soluciones tecnológicas eficientes y escalables, mi objetivo es mejorar continuamente la calidad 
-      del software y la infraestructura, optimizando procesos y asegurando una operación continua y sin interrupciones.
-      Experto en generar una trazabilidad de la infrastructura y generar flujos de trabajos y las mejores practicas.
-      Actualmente en residiendo en Madrid con perfil de prefetentemente de Teletrabajo.
+        Software Engineer with over 9 years of experience in developing web applications using Python and Django, 
+        as well as implementing and managing DevOps and Site Reliability Engineering (SRE) practices. 
+        Passionate about creating efficient and scalable technological solutions, my goal is to continuously improve
+         the quality of software and infrastructure by optimizing processes and ensuring continuous, uninterrupted operation.
+        Expert in generating infrastructure traceability and creating workflows and best practices. 
+        Currently residing in Madrid, preferably seeking remote work opportunities.
+
 
 
 
 education:
-    title: Educación
+    title: Education
     info:
       - degree: Grado en Ingeniería Electrónica de Comunicaciones
         university: Universidad Politécnica de Madrid
@@ -83,27 +84,29 @@ education:
           Integrar adecuadamente soluciones de tipo hardware y de tipo software, para alcanzar la máxima eficacia en el desarrollo de los sistemas electrónicos.
 
 experiences:
-    title: Experecias
+    title: Experiences
     info:
       - role: Python Django Developer, DevOps, SER and Automation Engineer
         time: 2017 - Present
         company: BBVA Technologies, Madrid
         details: |
-          Diseño y desarrollo de aplicaciones web robustas utilizando Python y el framework Django.
-          Implementación de APIs RESTful para facilitar la integración con otros sistemas.
-          Automatización de pipelines de CI/CD utilizando herramientas como Jenkins, GitLab CI/CD...
-          Configuración y administración de infraestructura en la nube (AWS, Rhv Manager, Openstack, physical).
-          Implementación de prácticas de Infraestructura como Código (IaC) utilizando Ansible.
-          Gestión de incidentes y resolución de problemas críticos en tiempo real, asegurando la alta disponibilidad y resiliencia del sistema.
-          Análisis y mejora continua del rendimiento y la seguridad de las aplicaciones y la infraestructura.
+          Design and development of robust web applications using Python and the Django framework.
+          Implementation of RESTful APIs to facilitate integration with other systems.
+          Automation of CI/CD pipelines using tools such as Jenkins, GitLab CI/CD, etc.
+          Configuration and administration of cloud infrastructure (AWS, Rhv Manager, OpenStack, physical).
+          Implementation of Infrastructure as Code (IaC) practices using Ansible.
+          Incident management and resolution of critical problems in real-time, ensuring high system availability and resilience.
+          Continuous analysis and improvement of application and infrastructure performance and security.
 
 
       - role: OpenStack Administrator & Developer at Oesia
         time: 2015 - 2017
         company: Oesia, Madrid
         details: |
-          Desarrollo de herramienta de CloudComputing.
-          Basado en Openstack y ceph.           
+          Development of a Cloud Computing tool.
+          Based on OpenStack and Ceph.
+
+          
 
 # certifications:
 #       title: Certifications
@@ -131,21 +134,21 @@ experiences:
 #             Suspendisse placerat risus ante, sed porta nisi blandit at.
 
 projects:
-    title: Logros Destacados
+    title: Projects
     intro: >
-      Proyectos destacados que he liderado y llevado a cabo con éxito a lo largo de mi carrera.
+      Highlighted projects that I have successfully led and carried out throughout my career.
+
 
     assignments:
       - title: Orion
-        tagline: "Creación de Orion, una aplicación para la gestión y auditoría de la infraestructura del banco, que administra más de 4000 máquinas en diversas plataformas como on-premise, AWS, hardware físico y OpenStack.
-                  Generando una api para interectuar con la informacion en tiempo real. Gesiona la operación de toda la infraestructura
-                  asi como la subida a producción de todo ASO y APX, con miles de operaciones diarias."
+        tagline: "Creation of Orion, an application for the management and auditing of the bank's infrastructure, which administers more than 4,000 machines across various platforms such as on-premise, AWS, physical hardware, and OpenStack.
+                  Generating an API to interact with real-time information. It manages the operation of the entire infrastructure as well as the production deployment of all ASO and APX, with thousands of daily operations."
 
       - title: Jenkins pipelines
-        tagline: "Generación de pipelines y librerias complejas que permiten la generación de infrastructura de forma ordenada y efectiva."
+        tagline: "Generation of complex pipelines and libraries that enable the orderly and effective creation of infrastructure."
 
-      - title: Integración F5 con Openstack
-        tagline: "Tras la deprecación de la integración de F5 con OpenStack, se generó una API RESTful que permitió la integración de ambos productos."
+      - title: F5 integration with OpenStack
+        tagline: "After the deprecation of the F5 integration with OpenStack, a RESTful API was generated to enable the integration of both products."
 
 skills:
     title: Skills &amp; Proficiency
