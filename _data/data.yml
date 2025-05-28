@@ -140,10 +140,15 @@ projects:
 
 
     assignments:
+      - title: Lead Python & Django Developer & Project Champion
+        tagline: "Lead developer and passionate advocate for a project leveraging Python, Django, and a commitment to test-driven development and best practices."
+        
       - title: Orion
-        tagline: "Creation of Orion, an application for the management and auditing of the bank's infrastructure, which administers more than 4,000 machines across various platforms such as on-premise, AWS, physical hardware, and OpenStack.
-                  Generating an API to interact with real-time information. It manages the operation of the entire infrastructure as well as the production deployment of all ASO and APX, with thousands of daily operations."
-
+        tagline: "Developed Orion, a comprehensive application for the management and auditing of the bank’s infrastructure, 
+        utilizing Django, MongoDB, PostgreSQL, and Celery. This platform administers over 10,000 machines across diverse environments including on-premise, 
+        AWS, physical hardware, and OpenStack. Key responsibilities included designing and implementing an API for real-time information access, 
+        managing the entire infrastructure's operation, and automating the production deployment of all ASO and APX systems, handling 15,000 daily operations."              
+        
       - title: Jenkins pipelines
         tagline: "Generation of complex pipelines and libraries that enable the orderly and effective creation of infrastructure."
 
@@ -160,20 +165,21 @@ skills:
         level: 90%
       - name: Flask
         level: 75%
-      - name: Unittest
-        level: 60%
+      - name: Unittest / Pytest / TestCase
+        level: 70%
       - name: Celery
         level: 75%
-         
-      - name: Javascript & jQuery
+      - name: JavaScript & jQuery
         level: 70%
-
       - name: HTML5 & CSS
-        level: 70%
-      
+        level: 65%
       - name: Ansible
         level: 85%
-      - name: Openstak
+      - name: Terraform
+        level: 30%
+      - name: Helm
+        level: 20%
+      - name: OpenStack
         level: 80%
       - name: AWS
         level: 65%
@@ -185,34 +191,37 @@ skills:
         level: 80%
       - name: Infoblox
         level: 55%
-      - name: Django Rest Framework
+      - name: Django REST Framework
         level: 80%
-      - name: Postgres
+      - name: PostgreSQL
         level: 65%
       - name: MongoDB
         level: 80%
       - name: Linux
         level: 75%
-      - name:  Java
-        level: 45%
+      - name: Java
+        level: 40%
       - name: Groovy
         level: 75%
       - name: Jenkins
         level: 75%
       - name: Git
-        level: 85%
+        level: 90%
       - name: F5 Load Balancer
         level: 30%
-
-      - name: Comunicación Efectiva
-        level: 75%  
-      - name: Trabajo en Equipo
+      - name: GitLab CI / action
+        level: 50%
+      - name: LocalStack
+        level: 40%        
+      - name: Effective Communication
+        level: 75%
+      - name: Teamwork
         level: 95%
-      - name: Adaptabilidad
+      - name: Adaptability
         level: 95%
-      - name: Capacidad de Aprendizaje
+      - name: Learning Ability
         level: 95%
-      - name: Liderazgo
+      - name: Leadership
         level: 70%
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
