@@ -62,7 +62,7 @@ career-profile:
         Passionate about creating efficient and scalable technological solutions, my goal is to continuously improve
          the quality of software and infrastructure by optimizing processes and ensuring continuous, uninterrupted operation.
         Expert in generating infrastructure traceability and creating workflows and best practices. 
-        Currently residing in Madrid, preferably seeking remote work opportunities. Working in an international work group with colleagues in Mexico and Turkey.
+        Currently residing in Madrid, preferably seeking remote work opportunities.
 
 
 education:
@@ -94,6 +94,7 @@ experiences:
           Implementation of Infrastructure as Code (IaC) practices using Ansible.
           Incident management and resolution of critical problems in real-time, ensuring high system availability and resilience.
           Continuous analysis and improvement of application and infrastructure performance and security.
+          Working in an international work group with colleagues in Mexico and Turkey.
 
 
       - role: OpenStack Administrator & Developer at Oesia
