@@ -62,9 +62,7 @@ career-profile:
         Passionate about creating efficient and scalable technological solutions, my goal is to continuously improve
          the quality of software and infrastructure by optimizing processes and ensuring continuous, uninterrupted operation.
         Expert in generating infrastructure traceability and creating workflows and best practices. 
-        Currently residing in Madrid, preferably seeking remote work opportunities.
-
-
+        Currently residing in Madrid, preferably seeking remote work opportunities. Working in an international work group with colleagues in Mexico and Turkey.
 
 
 education:
@@ -74,15 +72,14 @@ education:
         university: Universidad Politécnica de Madrid
         time: 2009 - 2020
         details: |
-          Elaboración, desarrollo y gestión de proyectos para el diseño, la concepción, despliegue y explotación de redes, servicios y aplicaciones de Telecomunicación.
-          Adquirir la formación científica y tecnológica, sobre materiales y componentes electrónicos, necesaria para el ejercicio profesional en el diseño y desarrollo de sistemas electrónicos en el sector de las telecomunicaciones.
-          Realizar la especificación, simulación, diseño, desarrollo, diagnóstico, documentación y puesta a punto de circuitos, sistemas y productos con aplicación en el ámbito de la informática y de las telecomunicaciones.
-          Diseñar sistemas digitales apoyándose en las tecnologías basadas en la lógica programable, circuitos integrados de aplicación específica y microprocesadores.
-          Desarrollar el hardware analógico y digital necesario que permita captar, adaptar, generar, procesar o digitalizar señales de diferentes características.
-          Diseñar aplicaciones orientadas a sistemas de medida y control electrónico.
-          Definir especificaciones de seguridad, calidad y fiabilidad de los productos electrónicos. Describir las pruebas y ensayos de acuerdo a las normativas reguladoras.
-          Integrar adecuadamente soluciones de tipo hardware y de tipo software, para alcanzar la máxima eficacia en el desarrollo de los sistemas electrónicos.
-
+          Design, develop, and manage projects for the creation, conception, deployment, and operation of telecommunications networks, services, and applications.
+          Acquire the scientific and technological training on electronic materials and components needed for professional practice in the design and development of electronic systems in the telecommunications sector.
+          Specify, simulate, design, develop, diagnose, document, and fine‑tune circuits, systems, and products used in computing and telecommunications.
+          Design digital systems using programmable‑logic technologies, application‑specific integrated circuits, and microprocessors.
+          Build the required analog and digital hardware that can capture, adapt, generate, process, or digitize signals of various types.
+          Design applications geared toward electronic measurement and control systems.
+          Define safety, quality, and reliability specifications for electronic products and describe tests and trials in accordance with regulatory standards.
+          Properly integrate both hardware and software solutions to achieve maximum effectiveness in the development of electronic systems.
 experiences:
     title: Experiences
     info:
@@ -93,7 +90,7 @@ experiences:
           Design and development of robust web applications using Python and the Django framework.
           Implementation of RESTful APIs to facilitate integration with other systems.
           Automation of CI/CD pipelines using tools such as Jenkins, GitLab CI/CD, etc.
-          Configuration and administration of cloud infrastructure (AWS, Rhv Manager, OpenStack, physical).
+          Configuration and administration of cloud infrastructure (AWS, Rhv Manager, OpenStack, kubernetes, physical).
           Implementation of Infrastructure as Code (IaC) practices using Ansible.
           Incident management and resolution of critical problems in real-time, ensuring high system availability and resilience.
           Continuous analysis and improvement of application and infrastructure performance and security.
@@ -188,6 +185,8 @@ skills:
       - name: Kubernetes
         level: 50%
       - name: Docker
+        level: 80%
+      - name: Podman
         level: 80%
       - name: Infoblox
         level: 55%
