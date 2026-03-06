@@ -1,45 +1,51 @@
-@media print
-   {
+@media print {
     @page {
         size: A4;
+        margin: 0;
     }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
     body {
-       font-size: 12pt;
+        font-size: 12pt;
+        padding: 0;
     }
 
     img.avatar {
-        filter: grayscale(1);
-        -webkit-filter: greyscale(1);
+        filter: none;
+        -webkit-filter: none;
     }
-   .main-wrapper .time {
-       float: right;
+
+    .main-wrapper .time {
+        float: right;
         color: black !important;
-        -webkit-print-color-adjust: exact; 
-   }
+    }
+
     .sidebar-wrapper {
         position: static;
         float: right;
         width: 40%;
-        -webkit-print-color-adjust: exact; 
     }
 
     .remove-container.container-block {
-       display: none;
+        display: none;
     }
 
     footer {
-       display: none;
+        display: none;
     }
 
-    .skillset .level-bar-inner {
-       background-color: black !important;
-       -webkit-print-color-adjust: exact; 
+    .pdf-btn {
+        display: none;
     }
 
-   .fa-inverse,
-   .fa-inverse:after,
-   .fa-inverse:before {
-     color: #ffffff !important;
-   }
-
+    .fa-inverse,
+    .fa-inverse:after,
+    .fa-inverse:before {
+        color: #ffffff !important;
+    }
 }
