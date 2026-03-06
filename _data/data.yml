@@ -83,7 +83,7 @@ career-profile:
 education:
     title: Education
     info:
-      - degree: Grado en Ingeniería Electrónica de Comunicaciones
+      - degree: Bachelor's Degree in Communications Electronic Engineering (Grado en Ingeniería Electrónica de Comunicaciones)
         university: Universidad Politécnica de Madrid
         time: 2009 - 2016
         details: |
@@ -209,7 +209,10 @@ skills:
           - Flask
           - Celery
           - Groovy
-          - JavaScript & jQuery
+          - JavaScript
+          - jQuery
+          - HTML5 & CSS
+          - Bootstrap
           - Java
 
       - name: Infrastructure & Cloud

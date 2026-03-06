@@ -1,44 +1,46 @@
 title: "About Me"
 
 paragraphs:
-  - "I am a Senior Software Engineer and Platform Architect with over 10 years of experience building
-    systems at the intersection of Python/Django, DevOps, and Site Reliability Engineering. My work has
-    always been driven by a single conviction: that the best infrastructure platforms are the ones
-    engineers don't have to think about — because the complexity is hidden behind clean, reliable
-    abstractions that just work."
+  - "I am a Senior Software Engineer and Platform Architect with over 10 years of experience specialising
+    in infrastructure automation, Python/Django development, and Site Reliability Engineering. Automation
+    is not just something I implement — it is the lens through which I approach every engineering problem:
+    if a human is doing it repeatedly, a system should be doing it instead."
 
-  - "For the past 8 years at BBVA Technology, I have been the creator and lead architect of Orion —
-    the central IaaS platform that today forms the backbone of infrastructure operations across the entire
-    organisation. Built from scratch and owned entirely by me, Orion manages 25,000+ machines across AWS,
-    OpenStack, OpenShift, on-premise, and physical environments, processing 35,000+ daily operations and
-    serving 500+ engineers. Every action is fully audited, every environment is traceable, and through
-    its REST API, development teams can deploy their own artefacts to production without any infrastructure
-    team intervention — a self-service model that eliminated one of the organisation's most persistent
-    bottlenecks."
+  - "At BBVA, infrastructure deployments across 25,000+ machines in hybrid environments were fragmented,
+    manual, and inconsistent — with no central visibility, no audit trail, and development teams entirely
+    dependent on the infrastructure team to ship anything to production. I took full ownership as sole
+    architect to solve this from the ground up. I conceived and built Orion: a centralised governance
+    and deployment platform with full audit traceability, automated status reporting, permissions
+    management, and a Swagger-documented REST API connecting with other core bank systems. Today Orion
+    processes 35,000+ daily operations autonomously, serves 500+ engineers, and enables development
+    teams to ship their own artefacts to production with zero infrastructure team intervention."
 
-  - "But Orion is one piece of a larger ecosystem I designed. I built a universal deployment pipeline
-    based on a driver pattern — one codebase that deploys to any infrastructure flavour by simply swapping
-    the driver. Underpinning this is a centralised configuration management system that decouples variable
-    logic from playbook code, making every automation environment-agnostic by design — a principle that
-    runs through the entire Ansible codebase I own for provisioning the organisation's shared internal
-    services, including Artifactory and GitLab. I extended this ecosystem further to Kubernetes, enabling
-    containerised automation execution with automatic variable injection and full governance."
+  - "Even with Orion in place, deployments across different infrastructure environments still required
+    separate codebases and manual environment-specific configuration — a maintenance burden that only
+    grew with scale. I designed a universal deployment pipeline based on a driver pattern: one codebase
+    deployable to any environment by simply swapping the driver, backed by a centralised configuration
+    management system that automatically resolves and injects the correct variables per environment at
+    runtime. I extended this model to Kubernetes Jobs for containerised automation execution, and applied
+    the same principles to the full Ansible codebase managing shared internal services including
+    Artifactory and GitLab. Engineers now write once and deploy anywhere — with no manual variable
+    management, no environment-specific branches, and full traceability at every step."
 
-  - "I have also engineered solutions to critical operational problems. When F5's native OpenStack
-    integration was deprecated, I built a custom API bridge that restored full load balancing continuity
-    with zero downtime. And when Jenkins became a bottleneck at scale — even after building a shared
-    pipeline library that had become the CI/CD standard across teams — I replaced it entirely with a
-    purpose-built Django and Celery dispatcher running in High Availability, giving the team full control
-    over execution, observability, and reliability."
+  - "When Jenkins became a critical bottleneck — unreliable at scale, hard to maintain, and locking
+    the team into vendor constraints — I replaced it entirely without disrupting ongoing operations.
+    I built a purpose-built dispatcher in Django and Celery, running in High Availability, with a full
+    REST API for programmatic operation control, retry logic, and observability. Jenkins was fully
+    decommissioned with zero downtime, and the team gained complete ownership over execution flow and
+    a system built to evolve with their needs — not constrained by a third-party tool's limitations."
 
-  - "My engineering philosophy is grounded in clean code, test-driven development, and continuous delivery.
-    I believe in designing for simplicity at the surface and robustness underneath — a principle I first
-    applied when building a self-hosted cloud storage platform on OpenStack Swift at Oesia, and that has
-    guided every system I have designed since. Beyond the technical work, I care deeply about the human
-    side of engineering: I mentor colleagues, share knowledge across teams, and keep stakeholders aligned
-    with technical reality. I thrive in environments where ownership, autonomy, and technical rigour
-    are valued."
-
-  - "I am currently looking for senior Python, SRE, or DevOps roles where I can apply this experience
-    to build platforms that make a real difference — for the engineers who use them and for the
-    organisations that depend on them."
+  - "Across all of these projects, my approach has been the same: understand the operational pain,
+    design an automated solution that removes it permanently, and build it to last — with clean,
+    test-driven code and decisions that stay aligned with business goals. But beyond the technical
+    work, I care deeply about the people around me. I genuinely enjoy
+    helping junior engineers and newcomers find their footing — making them feel part of the team from
+    day one, answering every question with the same patience, and investing time in their growth because
+    I know that a team where everyone feels capable and valued moves further than any individual ever
+    could. Creating that environment is something I take as seriously as the code I write. I am also
+    fully comfortable working remotely and across time zones — having collaborated daily with colleagues
+    in Mexico and Turkey, I know that distance is never a barrier when communication and trust are built
+    deliberately. I thrive where ownership, collaboration, and a culture of continuous learning are not
+    just words — but the way the team actually works every day."

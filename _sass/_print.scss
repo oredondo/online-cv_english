@@ -43,11 +43,17 @@
         order: 1;
     }
 
-    .main-wrapper .time {
-        position: absolute;
-        right: 0;
-        top: 0;
+    .main-wrapper .time,
+    .main-wrapper .cert-url {
+        position: static;
+        margin-left: auto;
+        white-space: nowrap;
         color: $text-grey !important;
+    }
+
+    .main-wrapper .upper-row,
+    .main-wrapper .second-upper-row {
+        overflow: visible;
     }
 
     .remove-container.container-block {

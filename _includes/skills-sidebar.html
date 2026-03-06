@@ -2,7 +2,7 @@
 {% if skills %}
 <div class="skills-sidebar-container container-block">
   <h2 class="container-block-title">
-    <i class="fas fa-layer-group"></i> {{ skills.title }}
+    {{ skills.title }}
   </h2>
   {% for category in skills.categories %}
     {% if category.sidebar %}
