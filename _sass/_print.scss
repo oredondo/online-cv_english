@@ -1,7 +1,10 @@
 @media print {
     @page {
         size: A4;
-        margin: 0;
+        margin-top: 15mm;
+        margin-bottom: 10mm;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     * {
@@ -20,15 +23,31 @@
         -webkit-filter: none;
     }
 
-    .main-wrapper .time {
-        float: right;
-        color: black !important;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        box-shadow: none;
     }
 
     .sidebar-wrapper {
-        position: static;
-        float: right;
-        width: 40%;
+        width: 30%;
+        flex-shrink: 0;
+        order: 2;
+    }
+
+    .main-wrapper {
+        width: 70%;
+        flex: 1;
+        padding: 30px;
+        order: 1;
+    }
+
+    .main-wrapper .time {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $text-grey !important;
     }
 
     .remove-container.container-block {
@@ -41,6 +60,28 @@
 
     .pdf-btn {
         display: none;
+    }
+
+    .screen-only {
+        display: none !important;
+    }
+
+    .print-only {
+        display: block !important;
+    }
+
+    .experiences-section .item,
+    .projects-section .item,
+    .certifications-section .item,
+    .sidebar-skill-category,
+    .education-container .item,
+    .languages-container,
+    .interests-container {
+        page-break-inside: avoid;
+    }
+
+    h2, .container-block-title {
+        page-break-after: avoid;
     }
 
     .fa-inverse,

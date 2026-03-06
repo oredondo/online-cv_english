@@ -1,0 +1,18 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="letter-body">
+  <div class="letter-wrapper">
+    {{ content }}
+  </div>
+
+  <button class="pdf-btn" onclick="window.print()" title="Download as PDF">
+    <i class="fas fa-file-pdf"></i> Download PDF
+  </button>
+
+  {% include scripts.html %}
+</body>
+</html>

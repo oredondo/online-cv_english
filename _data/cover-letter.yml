@@ -1,0 +1,44 @@
+title: "About Me"
+
+paragraphs:
+  - "I am a Senior Software Engineer and Platform Architect with over 10 years of experience building
+    systems at the intersection of Python/Django, DevOps, and Site Reliability Engineering. My work has
+    always been driven by a single conviction: that the best infrastructure platforms are the ones
+    engineers don't have to think about — because the complexity is hidden behind clean, reliable
+    abstractions that just work."
+
+  - "For the past 8 years at BBVA Technology, I have been the creator and lead architect of Orion —
+    the central IaaS platform that today forms the backbone of infrastructure operations across the entire
+    organisation. Built from scratch and owned entirely by me, Orion manages 25,000+ machines across AWS,
+    OpenStack, OpenShift, on-premise, and physical environments, processing 35,000+ daily operations and
+    serving 500+ engineers. Every action is fully audited, every environment is traceable, and through
+    its REST API, development teams can deploy their own artefacts to production without any infrastructure
+    team intervention — a self-service model that eliminated one of the organisation's most persistent
+    bottlenecks."
+
+  - "But Orion is one piece of a larger ecosystem I designed. I built a universal deployment pipeline
+    based on a driver pattern — one codebase that deploys to any infrastructure flavour by simply swapping
+    the driver. Underpinning this is a centralised configuration management system that decouples variable
+    logic from playbook code, making every automation environment-agnostic by design — a principle that
+    runs through the entire Ansible codebase I own for provisioning the organisation's shared internal
+    services, including Artifactory and GitLab. I extended this ecosystem further to Kubernetes, enabling
+    containerised automation execution with automatic variable injection and full governance."
+
+  - "I have also engineered solutions to critical operational problems. When F5's native OpenStack
+    integration was deprecated, I built a custom API bridge that restored full load balancing continuity
+    with zero downtime. And when Jenkins became a bottleneck at scale — even after building a shared
+    pipeline library that had become the CI/CD standard across teams — I replaced it entirely with a
+    purpose-built Django and Celery dispatcher running in High Availability, giving the team full control
+    over execution, observability, and reliability."
+
+  - "My engineering philosophy is grounded in clean code, test-driven development, and continuous delivery.
+    I believe in designing for simplicity at the surface and robustness underneath — a principle I first
+    applied when building a self-hosted cloud storage platform on OpenStack Swift at Oesia, and that has
+    guided every system I have designed since. Beyond the technical work, I care deeply about the human
+    side of engineering: I mentor colleagues, share knowledge across teams, and keep stakeholders aligned
+    with technical reality. I thrive in environments where ownership, autonomy, and technical rigour
+    are valued."
+
+  - "I am currently looking for senior Python, SRE, or DevOps roles where I can apply this experience
+    to build platforms that make a real difference — for the engineers who use them and for the
+    organisations that depend on them."

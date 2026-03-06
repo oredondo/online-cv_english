@@ -72,6 +72,12 @@ career-profile:
 
         Currently serving **500+ engineers** daily across a platform that processes **35,000+ operations/day**
         across **25,000+ machines**. Seeking senior Python, SRE, or DevOps roles — open to remote.
+    summary_short: |
+        Senior Software Engineer and Platform Architect with 10+ years of experience in Python/Django,
+        DevOps, and SRE. Owner and sole architect of BBVA's internal IaaS platform suite — serving
+        **500+ engineers** daily, processing **35,000+ operations/day** across **25,000+ machines**.
+        Specialised in building governance-driven, self-service infrastructure platforms with full
+        auditability and environment-agnostic tooling. Open to remote senior roles.
 
 
 education:
@@ -104,6 +110,12 @@ experiences:
           Mentored new team members and ran internal knowledge-sharing sessions across teams, fostering
           a common engineering culture around infrastructure automation and platform best practices.
           Worked in an international team alongside engineers in Mexico and Turkey.
+        details_short: |
+          Owner and sole architect of BBVA's IaaS platform suite (Orion), the backbone of infrastructure
+          operations for the entire organisation — 25,000+ machines, 35,000+ daily operations, 500+ engineers.
+          Led all technical decisions end-to-end: architecture, API design, deployment strategy, and platform evolution.
+          Defined organisation-wide deployment philosophy and engineering standards across all environments and teams.
+          Managed production incidents at banking scale; mentored engineers and drove knowledge sharing across teams.
         tech: [Python, Django, DRF, Celery, MongoDB, PostgreSQL, Ansible, Jenkins, GitLab CI, AWS, OpenStack, OpenShift, Kubernetes, Docker, Podman, Groovy, Infoblox, F5]
 
       - role: OpenStack Administrator & Developer
@@ -117,6 +129,8 @@ experiences:
           storage and sharing capabilities within the organisation's own infrastructure.
           Gained deep hands-on expertise in OpenStack internals, Ceph distributed storage, and the
           challenges of operating private cloud environments at production scale.
+        details_short: |
+          Administered a private cloud (OpenStack + Ceph) and built a self-hosted cloud storage app on OpenStack Swift.
         tech: [OpenStack, Ceph, Swift, Python, Linux]
 
           
@@ -143,31 +157,40 @@ projects:
 
     assignments:
       - title: "Orion — IaaS Audit & Deployment Platform (BBVA)"
-        tagline: "Ideated, architected, and built from scratch as sole owner. Orion is BBVA’s central IaaS platform for infrastructure governance, auditing, and deployment — managing 25,000+ machines across AWS, OpenStack, on-premise, and physical environments, processing 35,000+ daily operations. Every infrastructure action is fully audited, with automated status reporting and real-time traceability across the entire estate. Centralises permissions management, product catalogues, and remediation workflows. Exposes a Swagger/OpenAPI-documented REST API that connects with other core bank systems, enabling a self-service deployment model actively used by 500+ engineers. Built with Python, Django, Django REST Framework, MongoDB, PostgreSQL, and Celery."
+        tagline: "Ideated, architected, and built from scratch as sole owner. Orion is BBVA’s central IaaS platform for infrastructure governance, auditing, and deployment — managing 25,000+ machines across AWS, OpenStack, OpenShift, on-premise, and physical environments, processing 35,000+ daily operations. Every infrastructure action is fully audited, with automated status reporting and real-time traceability across the entire estate. Centralises permissions management, product catalogues, and remediation workflows. Exposes a Swagger/OpenAPI-documented REST API that connects with other core bank systems, enabling a self-service deployment model actively used by 500+ engineers. Built with Python, Django, Django REST Framework, MongoDB, PostgreSQL, and Celery."
+        tagline_short: "Sole owner and architect of BBVA’s central IaaS platform — managing 25,000+ machines and processing 35,000+ daily operations. Full audit traceability, permissions governance, and a self-service REST API used by 500+ engineers. Built with Python, Django, MongoDB, PostgreSQL, and Celery."
 
       - title: "Self-Service Deployment Pipeline (BBVA)"
         tagline: "Engineered a universal deployment pipeline in Django built around a driver pattern: each infrastructure flavour (AWS, OpenStack, on-premise, physical) is abstracted behind a common interface, so the same codebase deploys to any environment by simply swapping the driver. Beyond the technical design, defined the deployment philosophy and engineering principles that govern how infrastructure is provisioned organisation-wide — enabling development teams to ship artefacts to production autonomously, with no infrastructure team intervention required."
+        tagline_short: "Universal deployment pipeline in Django using a driver pattern — one codebase deploys to any environment (AWS, OpenStack, on-premise, physical) by swapping the driver. Defined the organisation-wide deployment philosophy enabling full developer self-service."
 
       - title: "Configuration Management System (BBVA)"
         tagline: "Built a centralised configuration management system that decouples variable management from playbook logic, allowing engineers to write environment-agnostic Ansible roles that work across development, staging, and production without modification. The system automatically resolves and injects the correct variables per target environment at deploy time — eliminating duplicated configuration sets, reducing human error, and making the entire infrastructure codebase significantly easier to maintain."
+        tagline_short: "Centralised system that decouples variable management from playbook logic, automatically injecting the correct configuration per environment at deploy time. Engineers write once, deploy anywhere."
 
       - title: "Jenkins to Custom Dispatcher Migration (BBVA)"
         tagline: "Led the strategic migration away from Jenkins by designing and building a purpose-built operation dispatcher in Django and Celery. The dispatcher runs in High Availability and exposes a REST API (Swagger/OpenAPI) for programmatic operation triggering and monitoring. Eliminated vendor lock-in, reliability bottlenecks, and the usability constraints imposed by Jenkins — giving the team full control over execution flow, retry logic, and observability. This project was the natural evolution of the Jenkins Shared Libraries framework, replacing it entirely."
+        tagline_short: "Replaced Jenkins with a purpose-built Django/Celery dispatcher running in HA, exposing a REST API for operation control. Eliminated vendor lock-in and reliability issues, delivering full observability and retry logic."
 
       - title: "Ansible Infrastructure & Services Management (BBVA)"
         tagline: "Owns and maintains the full Ansible codebase that provisions and configures BBVA’s internal infrastructure services — including Artifactory, GitLab, Jenkins, and other shared platforms used by engineering teams across the organisation. All roles are designed to be environment-agnostic, consuming variables from the Configuration Management System automatically. Keeps all services consistently deployed and configured across environments, with full traceability and minimal manual intervention."
+        tagline_short: "Full Ansible codebase for provisioning BBVA’s shared internal services (Artifactory, GitLab, Jenkins). Environment-agnostic roles powered by the Configuration Management System, ensuring consistency and zero configuration drift."
 
       - title: "Kubernetes Job Execution Engine (BBVA)"
         tagline: "Extended the deployment pipeline to support containerised automation execution via Kubernetes Jobs, enabling any automation or operation to run as an isolated, ephemeral container within the cluster. Fully integrated with the existing deployment philosophy and the Configuration Management System — the correct environment variables are resolved and injected automatically at runtime, keeping automations environment-agnostic by design. Replaced long-running processes and ad-hoc script execution with a scalable, observable, and self-contained execution model, bringing the same governance and traceability standards of Orion to the automation layer."
+        tagline_short: "Containerised automation execution engine via Kubernetes Jobs, integrated with the Configuration Management System for automatic variable injection. Replaced ad-hoc scripts with a scalable, observable, and governed execution model."
 
       - title: "Jenkins Shared Libraries & Pipeline Framework (BBVA)"
         tagline: "Developed a library of reusable Jenkins pipelines and shared Groovy libraries that became the CI/CD standard across multiple infrastructure teams — reducing pipeline duplication and accelerating team onboarding. This framework later served as the foundation that exposed the limitations of Jenkins at scale, directly motivating the migration to the custom dispatcher."
+        tagline_short: "Reusable Jenkins pipeline library adopted as CI/CD standard across infrastructure teams. Later served as the foundation that motivated the full migration to the custom dispatcher."
 
       - title: "F5 / OpenStack API Bridge (BBVA)"
         tagline: "After the native F5 Load Balancer integration with OpenStack was officially deprecated, built a custom RESTful API to restore full interoperability between both systems. Delivered with zero downtime, ensuring uninterrupted load balancing operations across the bank’s infrastructure without requiring a disruptive platform migration."
+        tagline_short: "Custom RESTful API bridging F5 Load Balancer and OpenStack after native integration was deprecated. Delivered with zero downtime, maintaining uninterrupted banking operations."
 
       - title: "Private Cloud Storage Platform (Oesia)"
         tagline: "Built a self-hosted cloud storage application — conceptually equivalent to Dropbox — on top of OpenStack Swift object storage, providing internal teams with secure and scalable file storage and sharing capabilities without reliance on public cloud providers. Administered the underlying OpenStack and Ceph infrastructure to ensure platform availability and performance."
+        tagline_short: "Self-hosted cloud storage platform (Dropbox-equivalent) built on OpenStack Swift, providing secure and scalable internal file storage without public cloud dependency."
 
 skills:
     title: Skills &amp; Tech Stack
@@ -175,6 +198,7 @@ skills:
     categories:
       - name: Languages & Frameworks
         icon: fa-code
+        sidebar: true
         items:
           - Python
           - Django
@@ -190,6 +214,7 @@ skills:
 
       - name: Infrastructure & Cloud
         icon: fa-cloud
+        sidebar: true
         items:
           - AWS
           - OpenStack
@@ -208,6 +233,7 @@ skills:
 
       - name: Databases & Storage
         icon: fa-database
+        sidebar: true
         items:
           - PostgreSQL
           - MongoDB
@@ -216,6 +242,7 @@ skills:
 
       - name: CI/CD & DevOps
         icon: fa-cogs
+        sidebar: true
         items:
           - Jenkins
           - GitLab CI / GitHub Actions
@@ -229,6 +256,7 @@ skills:
 
       - name: Testing
         icon: fa-vial
+        sidebar: true
         items:
           - Unittest / TestCase
           - Pytest
@@ -236,6 +264,7 @@ skills:
 
       - name: AI & LLMs
         icon: fa-robot
+        sidebar: true
         items:
           - Ollama
           - Claude (Anthropic)
@@ -245,6 +274,7 @@ skills:
 
       - name: Soft Skills
         icon: fa-users
+        sidebar: true
         items:
           - Teamwork
           - Leadership

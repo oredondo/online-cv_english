@@ -16,6 +16,11 @@
   </div><!--//intro-->
   {% endif %}
 
+  <div class="print-only projects-web-note">
+    <i class="fas fa-globe"></i> Full project descriptions available at
+    <a href="http://{{ site.data.data.sidebar.website }}">{{ site.data.data.sidebar.website }}</a>
+  </div>
+
   {% for project in projects.assignments %}
     <div class="item">
 
@@ -28,7 +33,10 @@
       </span>
 
       {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+      <div class="project-tagline screen-only">- {{ project.tagline }}</div>
+      {% endif %}
+      {% if project.tagline_short %}
+      <div class="project-tagline print-only">- {{ project.tagline_short }}</div>
       {% endif %}
 
     </div><!--//item-->
