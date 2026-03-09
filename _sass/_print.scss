@@ -16,6 +16,21 @@
     body {
         font-size: 12pt;
         padding: 0;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    /* Use system fonts in print to avoid embedding large web fonts */
+    body, h1, h2, h3, h4, h5, h6,
+    p, li, span, div, a, td, th,
+    .name, .details, .summary, .intro,
+    .contact-list, .container-block-title,
+    .upper-row, .job-title, .degree,
+    .cert-name, .project-title {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .tagline, code, pre {
+        font-family: 'Courier New', Courier, monospace !important;
     }
 
     img.avatar {
@@ -26,14 +41,17 @@
     .wrapper {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         max-width: 100%;
         box-shadow: none;
+        overflow: visible;
     }
 
     .sidebar-wrapper {
         width: 30%;
         flex-shrink: 0;
         order: 2;
+        overflow: visible;
     }
 
     .main-wrapper {
@@ -41,6 +59,7 @@
         flex: 1;
         padding: 30px;
         order: 1;
+        overflow: visible;
     }
 
     .main-wrapper .time,
@@ -84,10 +103,18 @@
     .languages-container,
     .interests-container {
         page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .projects-section,
+    .experiences-section,
+    .certifications-section {
+        overflow: visible;
     }
 
     h2, .container-block-title {
         page-break-after: avoid;
+        break-after: avoid;
     }
 
     .fa-inverse,
