@@ -212,9 +212,12 @@ skills:
         sidebar: true
         items:
           - Python
+          - Go
+          - Asyncio / Async Programming
           - Django
           - Django REST Framework
           - FastAPI
+          - Pydantic
           - REST API Design
           - Swagger / OpenAPI
           - Flask
@@ -239,7 +242,10 @@ skills:
           - Podman
           - Ansible
           - Terraform
+          - Pulumi
           - Helm
+          - ArgoCD
+          - GitOps
           - Linux
           - Ceph
           - Nginx
@@ -251,6 +257,8 @@ skills:
         items:
           - PostgreSQL
           - MongoDB
+          - Redis
+          - RabbitMQ
           - Swift (Object Storage)
           - AWS S3
 
@@ -267,6 +275,8 @@ skills:
           - Vault (HashiCorp)
           - Bash / Shell Scripting
           - Grafana
+          - Prometheus
+          - ELK Stack / Splunk
 
       - name: Testing
         icon: fa-vial
@@ -281,7 +291,10 @@ skills:
         sidebar: true
         items:
           - LangChain
+          - RAG (Retrieval-Augmented Generation)
+          - Vector Databases
           - Ollama
+          - vLLM
           - Claude (Anthropic)
           - ChatGPT (OpenAI)
           - Gemini (Google)
