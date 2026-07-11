@@ -69,14 +69,14 @@ career-profile:
         auditability, and environment-agnostic tooling.
 
         I believe in designing systems that are **simple to use but powerful underneath** — where the
-        complexity is hidden behind clean abstractions (driver patterns, agnostic pipelines, centralised
+        complexity is hidden behind clean abstractions (like declarative YAML blueprints in **navi_blueprint**, driver patterns, agnostic pipelines, centralised
         configuration) so that engineers across the organisation can move faster and with fewer errors.
 
         Currently serving **500+ engineers** daily across a platform that processes **40,000+ operations/day**
         across **30,000+ machines**. Seeking senior infrastructure or platform engineering roles — open to remote.
     summary_short: |
         Senior Infrastructure & Platform Engineer with 10+ years of experience in Python, DevOps, and
-        automation. Owner and sole architect of BBVA's internal IaaS platform suite — serving
+        automation. Owner and sole architect of BBVA's internal IaaS platform suite (Orion & navi_blueprint) — serving
         **500+ engineers** daily, processing **40,000+ operations/day** across **30,000+ machines**.
         Specialised in building governance-driven, self-service infrastructure platforms with full
         auditability, data pipelines for internal stakeholders, and environment-agnostic tooling. Open to remote senior roles.
@@ -98,11 +98,12 @@ experiences:
         time: 2017 - Present
         company: BBVA Technology, Madrid
         details: |
-          Owner and sole architect of BBVA's internal IaaS platform suite — critical systems that today
+          Owner and sole architect of BBVA's internal IaaS platform suite (Orion & navi_blueprint) — critical systems that today
           form the backbone of infrastructure operations across the entire organisation, serving 500+
           engineers and processing 40,000+ daily operations across 30,000+ machines.
           Led all technical decisions end-to-end: system architecture, API design, data modelling,
           async processing, deployment strategy, and long-term evolution of the platform.
+          Conceived, designed, and built **navi_blueprint** as a declarative, asynchronous Python orchestration engine conceptually similar to Terraform, enabling teams to manage the full infrastructure lifecycle.
           Defined a **deployment philosophy and engineering standards** adopted organisation-wide,
           establishing how infrastructure is provisioned, audited, and governed across all environments.
           Collaborated with multiple internal teams and stakeholders to identify operational bottlenecks
@@ -113,7 +114,7 @@ experiences:
           a common engineering culture around infrastructure automation and platform best practices.
           Worked in an international team alongside engineers in Mexico and Turkey.
         details_short: |
-          Owner and sole architect of BBVA's IaaS platform suite (Orion), the backbone of infrastructure
+          Owner and sole architect of BBVA's IaaS platform suite (Orion & navi_blueprint), the backbone of infrastructure
           operations for the entire organisation — 30,000+ machines, 40,000+ daily operations, 500+ engineers.
           Led all technical decisions end-to-end: architecture, API design, deployment strategy, and platform evolution.
           Defined organisation-wide deployment philosophy and engineering standards across all environments and teams.
@@ -161,6 +162,10 @@ projects:
       - title: "Orion — IaaS Audit & Deployment Platform (BBVA)"
         tagline: "Ideated, architected, and built from scratch as sole owner. Orion is BBVA’s central IaaS platform for infrastructure governance, auditing, and deployment — managing 30,000+ machines across AWS, OpenStack, OpenShift, on-premise, and physical environments, processing 40,000+ daily operations. Every infrastructure action is fully audited, with automated status reporting and real-time traceability across the entire estate. Generates automated audit data exports (CSV pipelines) consumed directly by internal auditors and compliance stakeholders, turning raw operational data into structured, actionable reports. Centralises permissions management, product catalogues, and remediation workflows. Exposes a Swagger/OpenAPI-documented REST API that connects with other core bank systems, enabling a self-service deployment model actively used by 500+ engineers. Built with Python, Django, Django REST Framework, MongoDB, PostgreSQL, and Celery."
         tagline_short: "Sole owner and architect of BBVA’s central IaaS platform — managing 30,000+ machines and processing 40,000+ daily operations. Full audit traceability, automated CSV data exports for internal auditors, permissions governance, and a self-service REST API used by 500+ engineers. Built with Python, Django, MongoDB, PostgreSQL, and Celery."
+
+      - title: "Blueprint — Asynchronous Infrastructure Provisioning & Lifecycle Engine (BBVA)"
+        tagline: "Designed and built Blueprint (navi_blueprint) — an internal tool written in Python with a fully asynchronous architecture, conceptually analogous to Terraform, where teams declare their entire infrastructure in versioned YAML blueprints and the engine handles the rest. Deeply integrated with Orion, BBVA's internal infrastructure platform, the tool orchestrates parallel provisioning and job execution while maintaining full auditability — every run produces a structured report with complete Orion job traceability, even when failures occur mid-execution. Beyond creation, the engine manages the full infrastructure lifecycle, supporting idempotent destroy operations that safely resume partial teardowns without re-processing already-completed steps. The result is a production-grade orchestration engine that brings the declarative, reproducible infrastructure philosophy of Terraform to BBVA's internal platform, empowering multiple teams to provision, manage, and safely decommission complex environments from a single source of truth."
+        tagline_short: "Asynchronous Python orchestration engine conceptually similar to Terraform. Orchestrates parallel provisioning of complex environments declared via YAML blueprints. Deeply integrated with Orion for complete job traceability, auditing, and idempotent lifecycle teardown."
 
       - title: "Self-Service Deployment Pipeline (BBVA)"
         tagline: "Engineered a universal deployment pipeline in Django built around a driver pattern: each infrastructure flavour (AWS, OpenStack, on-premise, physical) is abstracted behind a common interface, so the same codebase deploys to any environment by simply swapping the driver. Beyond the technical design, defined the deployment philosophy and engineering principles that govern how infrastructure is provisioned organisation-wide — enabling development teams to ship artefacts to production autonomously, with no infrastructure team intervention required."
