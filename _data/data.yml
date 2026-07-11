@@ -112,13 +112,12 @@ experiences:
           availability and rapid resolution with minimal business impact.
           Mentored new team members and ran internal knowledge-sharing sessions across teams, fostering
           a common engineering culture around infrastructure automation and platform best practices.
-          Worked in an international team alongside engineers in Mexico and Turkey.
+          Managed the technical integration of our platform stack across international teams in Mexico and Turkey — running onboarding sessions, providing cross-team support, and developing specific platform enhancements to streamline their integration.
         details_short: |
-          Owner and sole architect of BBVA's IaaS platform suite (Orion & navi_blueprint), the backbone of infrastructure
-          operations for the entire organisation — 30,000+ machines, 40,000+ daily operations, 500+ engineers.
-          Led all technical decisions end-to-end: architecture, API design, deployment strategy, and platform evolution.
-          Defined organisation-wide deployment philosophy and engineering standards across all environments and teams.
-          Managed production incidents at banking scale; mentored engineers and drove knowledge sharing across teams.
+          Owner and sole architect of BBVA's IaaS platform suite (Orion & navi_blueprint) — 30,000+ machines, 500+ engineers.
+          Led platform architecture, API design, and organization-wide deployment standards.
+          Managed the integration and onboarding of international teams in Mexico and Turkey, developing custom platform enhancements.
+          Managed production incidents at banking scale; mentored engineers and drove cross-team knowledge sharing.
         tech: [Python, Django, DRF, Celery, MongoDB, PostgreSQL, Ansible, Jenkins, GitLab CI, AWS, OpenStack, OpenShift, Kubernetes, Docker, Podman, Groovy, Infoblox, F5]
 
       - role: OpenStack Administrator & Developer

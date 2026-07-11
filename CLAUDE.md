@@ -22,13 +22,13 @@ bundle exec jekyll serve
 This is a Jekyll static site with two pages:
 
 - **`/`** (`index.html`) — the CV, rendered with the `default` layout
-- **`/cover-letter`** (`cover-letter.html`) — rendered with the `letter` layout
+- **`/personal-statement`** (`personal-statement.html`) — rendered with the `letter` layout
 
 ### Where content lives
 
 All CV content is in `_data/data.yml`. This is the only file that needs editing for content changes. It contains: sidebar info, tagline, career profile (both `summary` and `summary_short` variants), experiences, projects, skills, certifications, and education.
 
-Cover letter content is in `_data/cover-letter.yml`.
+Personal statement content is in `_data/personal-statement.yml`.
 
 ### How sections render
 
