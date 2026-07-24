@@ -125,17 +125,71 @@
 }
 
 @media print {
-  .letter-body {
-    padding: 0;
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html, body.letter-body {
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .letter-wrapper {
-    box-shadow: none;
-    padding: 40px;
-    max-width: 100%;
+    box-shadow: none !important;
+    padding: 12mm 20mm !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    border: none !important;
   }
 
-  .letter-cv-link {
-    display: none;
+  .letter-cv-link,
+  .pdf-btn {
+    display: none !important;
+  }
+
+  .letter-header {
+    margin-bottom: 15px !important;
+  }
+
+  .letter-name {
+    font-size: 22pt !important;
+  }
+
+  .letter-divider {
+    height: 2px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .letter-title {
+    font-size: 13pt !important;
+    margin-bottom: 14px !important;
+  }
+
+  .letter-body-content p {
+    font-size: 10pt !important;
+    line-height: 1.45 !important;
+    margin-bottom: 10px !important;
+    color: #111111 !important;
+    text-align: justify !important;
+  }
+
+  .letter-sign {
+    margin-top: 20px !important;
+    padding-top: 10px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .letter-signature {
+    font-size: 12pt !important;
   }
 }
+
+
+

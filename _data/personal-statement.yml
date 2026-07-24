@@ -1,7 +1,7 @@
 title: "Personal Statement"
 
 paragraphs:
-  - "I am a Senior Platform Engineer and SRE with over 10 years of experience. I don't just build pipelines; I design internal developer platforms that hide infrastructure complexity behind clean, versioned abstractions. My core engineering philosophy is to pave **'Golden Paths'**—self-service models that eliminate manual bottlenecks, reduce cognitive load for developers, and ensure security and compliance are built in by design, rather than enforced as an afterthought."
+  - "I am a Senior Platform Engineer and Senior Python Developer with over 10 years of experience. I don't just build pipelines; I design internal developer platforms that hide infrastructure complexity behind clean, versioned abstractions. My core engineering philosophy is to pave **'Golden Paths'**—self-service models that eliminate manual bottlenecks, reduce cognitive load for developers, and ensure security and compliance are built in by design, rather than enforced as an afterthought."
 
   - "My work at BBVA Technology has been defined by designing systems that are cloud-agnostic and highly resilient. As the sole architect of **Orion** (the central governance and deployment platform) and **navi_blueprint** (an asynchronous, declarative lifecycle engine conceptually similar to Terraform), I have leveraged custom abstractions, Pulumi, Kubernetes, and driver-based patterns. This has enabled 500+ engineers to orchestrate parallel provisioning and job execution across hybrid environments (AWS, OpenStack, on-premises) from a single source of truth, without vendor lock-in."
 

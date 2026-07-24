@@ -1,10 +1,7 @@
 @media print {
     @page {
         size: A4;
-        margin-top: 15mm;
-        margin-bottom: 10mm;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 10mm 12mm;
     }
 
     * {
@@ -14,9 +11,10 @@
     }
 
     body {
-        font-size: 12pt;
+        font-size: 11pt;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif !important;
+        background: #ffffff !important;
     }
 
     /* Use system fonts in print to avoid embedding large web fonts */
@@ -45,6 +43,7 @@
         max-width: 100%;
         box-shadow: none;
         overflow: visible;
+        padding: 0 !important;
     }
 
     .sidebar-wrapper {
@@ -57,10 +56,22 @@
     .main-wrapper {
         width: 70%;
         flex: 1;
-        padding: 30px;
+        padding: 20px;
         order: 1;
         overflow: visible;
+
+        .section {
+            margin-bottom: 22px !important;
+        }
+
+        .summary p {
+            margin-bottom: 8px !important;
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
     }
+
 
     .main-wrapper .time,
     .main-wrapper .cert-url {
@@ -79,15 +90,10 @@
         display: none;
     }
 
-    footer {
-        display: none;
-    }
-
-    .pdf-btn {
-        display: none;
-    }
-
-    .screen-only {
+    footer,
+    .pdf-btn,
+    .screen-only,
+    .letter-cv-link {
         display: none !important;
     }
 
@@ -101,7 +107,8 @@
     .sidebar-skill-category,
     .education-container .item,
     .languages-container,
-    .interests-container {
+    .interests-container,
+    .letter-sign {
         page-break-inside: avoid;
         break-inside: avoid;
     }
@@ -112,7 +119,7 @@
         overflow: visible;
     }
 
-    h2, .container-block-title {
+    h2, .container-block-title, .section-title {
         page-break-after: avoid;
         break-after: avoid;
     }
@@ -123,3 +130,4 @@
         color: #ffffff !important;
     }
 }
+
