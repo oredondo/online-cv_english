@@ -22,7 +22,10 @@
   </div>
 
   {% for project in projects.assignments %}
-    <div class="item">
+    {% if page.layout == 'print' and project.screen_only %}
+      {% continue %}
+    {% endif %}
+    <div class="item{% if project.screen_only %} screen-only{% endif %}">
 
       <span class="project-title">
         {% if project.link %}

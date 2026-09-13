@@ -103,7 +103,7 @@ experiences:
           Led all technical decisions end-to-end: system architecture, API design, data modelling,
           async processing, deployment strategy, and long-term evolution of the platform — making underlying multi-environment infrastructure effectively invisible to platform users while preserving 100% auditability.
           Conceived, designed, and built **Orion AI** integrated into FONIL — an agentic operational AI system (LangGraph, ReAct, Qwen LLM) that automates CI/CD failure diagnostics, reducing MTTR from hours to seconds and eliminating manual log triage.
-          Conceived, designed, and built our **automation suite** (Blueprint) as a declarative, asynchronous Python orchestration engine conceptually similar to Terraform, enabling teams to manage the full infrastructure lifecycle.
+          Conceived, designed, and built our **automation suite** (Blueprint) as a declarative, asynchronous Python orchestration engine using custom YAML blueprints (conceptually similar to Terraform), enabling teams to manage the full infrastructure lifecycle and eliminating the need for commercial suites like Red Hat Automation Platform.
           Defined a **deployment philosophy and engineering standards** adopted organisation-wide,
           establishing how infrastructure is provisioned, audited, and governed across all environments.
           Collaborated with multiple internal teams and stakeholders to identify operational bottlenecks
@@ -117,6 +117,7 @@ experiences:
           Owner and sole architect of BBVA's IaaS & AI platform suite (Orion, Orion AI & automation suite) — making infrastructure invisible to 500+ engineers across 30,000+ machines.
 
           Architected Orion AI (LangGraph/ReAct) for automated CI/CD failure diagnostics, drastically reducing MTTR.
+          Designed Blueprint as an asynchronous YAML orchestration engine, avoiding proprietary vendor lock-in (Red Hat Automation Platform).
           Led platform architecture, API design, and organization-wide deployment standards.
           Managed the integration and onboarding of international teams in Mexico and Turkey, developing custom platform enhancements.
           Managed production incidents at banking scale; mentored engineers and drove cross-team knowledge sharing.
@@ -170,10 +171,13 @@ projects:
         tagline: "Architected and integrated Orion AI into the FONIL platform, building a parallel, multi-agent orchestration pipeline using LangGraph and ReAct agents to automate root-cause failure analysis in CI/CD infrastructure. Concurrently aggregates Jenkins logs, Redis-cached support documentation, and business context, while dynamically querying GitLab repositories and commit diffs with high-context LLMs (Qwen 131k context) under strict, deterministic guardrails. This auto-diagnostic system transformed infrastructure operations by drastically reducing Mean Time to Resolution (MTTR) from hours to seconds per incident, eliminating manual log triage, filtering operational noise, and enabling self-service troubleshooting across engineering teams."
         tagline_short: "Operational AI system built with LangGraph and ReAct agents to automate CI/CD failure diagnostics in FONIL. Concurrently analyzes Jenkins logs, GitLab diffs, and support docs using high-context LLMs, drastically reducing MTTR and manual operational triage."
 
+      - title: "OmniLecture Studio — Multimodal AI & Voice Processing Desktop Suite (Personal Project)"
+        tagline: "Architected and built a native Linux (GNOME/Wayland, GTK 3) multimodal AI study and dictation suite in Python. Coordinates multi-node processing graphs using LangGraph to process class recordings, audio dictations, and notebook photographs. Features a dual speech recognition engine combining local on-device transcription with faster-whisper (CPU int8 quantization, anti-OOM) alongside cloud API fallbacks. Builds multimedia streaming and capture pipelines via GStreamer, PipeWire / PulseAudio, D-Bus, and OpenCV with Tesseract OCR, producing structured Markdown study notes, Word documents, and Anki flashcards under strict anti-hallucination prompts."
+        tagline_short: "Native Linux multimodal AI suite built with LangGraph, GStreamer/PipeWire audio capture, and local faster-whisper (CPU int8) speech recognition for automated notes and Anki flashcard generation."
 
       - title: "Blueprint — Asynchronous Infrastructure Provisioning & Lifecycle Engine (BBVA)"
-        tagline: "Designed and built Blueprint (navi_blueprint) — an internal tool written in Python with a fully asynchronous architecture, conceptually analogous to Terraform, where teams declare their entire infrastructure in versioned YAML blueprints and the engine handles the rest. Deeply integrated with Orion, BBVA's internal infrastructure platform, the tool orchestrates parallel provisioning and job execution while maintaining full auditability — every run produces a structured report with complete Orion job traceability, even when failures occur mid-execution. Beyond creation, the engine manages the full infrastructure lifecycle, supporting idempotent destroy operations that safely resume partial teardowns without re-processing already-completed steps. The result is a production-grade orchestration engine that brings the declarative, reproducible infrastructure philosophy of Terraform to BBVA's internal platform, empowering multiple teams to provision, manage, and safely decommission complex environments from a single source of truth."
-        tagline_short: "Asynchronous Python orchestration engine conceptually similar to Terraform. Orchestrates parallel provisioning of complex environments declared via YAML blueprints. Deeply integrated with Orion for complete job traceability, auditing, and idempotent lifecycle teardown."
+        tagline: "Designed and built Blueprint (navi_blueprint) — an internal tool written in Python with a fully asynchronous architecture, conceptually analogous to Terraform, where teams declare their entire infrastructure in versioned YAML blueprints and the engine handles the rest. Successfully eliminated the need for proprietary commercial suites like Red Hat Automation Platform (Ansible Tower). Deeply integrated with Orion, BBVA's internal infrastructure platform, the tool orchestrates parallel provisioning and job execution while maintaining full auditability — every run produces a structured report with complete Orion job traceability, even when failures occur mid-execution. Beyond creation, the engine manages the full infrastructure lifecycle, supporting idempotent destroy operations that safely resume partial teardowns without re-processing already-completed steps. The result is a production-grade orchestration engine that brings the declarative, reproducible infrastructure philosophy of Terraform to BBVA's internal platform, empowering multiple teams to provision, manage, and safely decommission complex environments from a single source of truth."
+        tagline_short: "Asynchronous Python orchestration engine conceptually similar to Terraform. Teams declare complex environments via YAML blueprints. Successfully avoided proprietary enterprise licensing (Red Hat Automation Platform) while delivering idempotent lifecycle management and full Orion audit traceability."
 
       - title: "Self-Service Deployment Pipeline (BBVA)"
         tagline: "Engineered a universal deployment pipeline in Django built around a driver pattern: each infrastructure flavour (AWS, OpenStack, on-premise, physical) is abstracted behind a common interface, so the same codebase deploys to any environment by simply swapping the driver. Beyond the technical design, defined the deployment philosophy and engineering principles that govern how infrastructure is provisioned organisation-wide — enabling development teams to ship artefacts to production autonomously, with no infrastructure team intervention required."
@@ -206,6 +210,14 @@ projects:
       - title: "WrenchBuddy — AI Vehicle Maintenance Assistant (Personal Project)"
         tagline: "Personal project built with Python, Django, and LangChain. WrenchBuddy uses AI agents to analyse vehicle maintenance invoices — automatically extracting and storing what was serviced, replaced, or repaired for each vehicle. A conversational chat interface then allows the user to ask natural-language questions about maintenance history and upcoming service requirements, with the agents reasoning over the stored data to provide accurate, context-aware answers. Covers both car and motorbike maintenance tracking."
         tagline_short: "Personal Django/LangChain app with AI agents that parse maintenance invoices and power a chat interface for vehicle service history and upcoming maintenance queries."
+
+      - title: "ESP32 Bluetooth Motorcycle Navigation Controller (Hardware & IoT Project)"
+        screen_only: true
+        tagline: "Designed and built a custom physical handlebar controller powered by an ESP32 microcontroller, communicating over Bluetooth Low Energy (BLE HID) to safely control a navigation tablet on a motorbike while riding. Handled power regulation, circuit soldering, hardware switch debouncing, and low-level firmware programming."
+
+      - title: "Self-Hosted Village Heating Automation (IoT / Raspberry Pi 2)"
+        screen_only: true
+        tagline: "Built a custom self-hosted home automation web system in Python and Django running on a Raspberry Pi 2, controlling physical GPIO relay boards to remotely monitor and regulate family home heating. In continuous, rock-solid production for nearly 10 years with 100% uptime and zero cloud dependencies."
 
       - title: "Private Cloud Storage Platform (Oesia)"
         tagline: "Built a self-hosted cloud storage application — conceptually equivalent to Dropbox — on top of OpenStack Swift object storage, providing internal teams with secure and scalable file storage and sharing capabilities without reliance on public cloud providers. Administered the underlying OpenStack and Ceph infrastructure to ensure platform availability and performance."
@@ -255,6 +267,8 @@ skills:
           - ArgoCD
           - GitOps
           - Linux
+          - Embedded Linux & Raspberry Pi
+          - ESP32 / Microcontrollers & IoT
           - Ceph
           - Nginx
           - Apache
@@ -277,6 +291,7 @@ skills:
           - Jenkins
           - GitLab CI / GitHub Actions
           - Git
+          - Declarative YAML DSLs & Blueprints
           - Infoblox
           - F5 Load Balancer
           - LocalStack
@@ -301,6 +316,9 @@ skills:
           - LangChain
           - LangGraph
           - ReAct Agents
+          - Model Context Protocol (MCP)
+          - Whisper / faster-whisper (CPU int8)
+          - Audio & Speech Processing
           - RAG (Retrieval-Augmented Generation)
           - Vector Databases
           - Ollama
@@ -309,6 +327,7 @@ skills:
           - ChatGPT (OpenAI)
           - Gemini (Google)
           - Prompt Engineering
+          - Deterministic Guardrails
 
       - name: Soft Skills
         icon: fa-users
