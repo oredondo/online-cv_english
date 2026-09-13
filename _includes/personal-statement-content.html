@@ -1,0 +1,36 @@
+{% assign letter = site.data['personal-statement'] %}
+{% assign sidebar = site.data.data.sidebar %}
+
+<div class="letter-header">
+  <div class="letter-author">
+    <h1 class="letter-name">{{ sidebar.name }}</h1>
+    <p class="letter-tagline">{{ sidebar.tagline }}</p>
+    <p class="letter-contact">
+      <span><i class="fas fa-envelope"></i> {{ sidebar.email }}</span>
+      <span><i class="fas fa-phone"></i> {{ sidebar.phone }}</span>
+      <span><i class="fab fa-linkedin"></i> linkedin.com/in/{{ sidebar.linkedin }}</span>
+    </p>
+  </div>
+  <div class="letter-date">
+    <a class="letter-cv-link" href="{{ site.baseurl }}/">
+      <i class="fas fa-id-card"></i> View full CV
+    </a>
+  </div>
+</div>
+
+<div class="letter-divider"></div>
+
+<h2 class="letter-title">{{ letter.title }}</h2>
+
+<div class="letter-body-content">
+  {% for paragraph in letter.paragraphs %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
+
+  <div class="letter-sign">
+    <p class="letter-signature">{{ sidebar.name }}</p>
+    <p class="letter-sign-contact">
+      <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+title: "Cover Letter — AI Engineer (BBVA Switzerland, Zurich)"
+
+subtitle: "Internal Mobility & Career Development Application"
+
+paragraphs:
+  - "After nine years building core infrastructure platforms at BBVA Technology, I was glad to see the AI Engineer opening in Zurich. As the industry rapidly shifts toward production-grade GenAI and autonomous agentic systems, I've aligned my engineering focus directly with where the market is heading."
+
+  - "Most recently, I architected Orion AI for our FONIL platform. It's an agentic system built with LangGraph and ReAct agents that automates CI/CD failure diagnostics. Instead of having engineers dig through logs for hours, the agent concurrently pulls Jenkins logs, queries Redis-cached support docs via RAG, and inspects GitLab commit diffs through tool calling. Under strict deterministic guardrails (temp 0.0), it cuts MTTR down to seconds. The system is already validated in pre-production, and we're currently waiting on the team to deploy our on-premise AI cluster for the final rollout."
+
+  - "Beyond AI, I've spent nearly a decade owning BBVA's central IaaS platform and automation suite, Orion. I built these systems from scratch to make underlying infrastructure invisible to 500+ engineers daily across 30,000+ machines and 40,000 daily operations. Working in banking means I don't treat security, audit trails, and data privacy as afterthoughts—they're baked into every pipeline and API I design."
+
+  - "Moving to Zurich is a great step for my career within BBVA, and I'd love to help your team turn complex business needs into reliable AI products. Let's set up a time to chat about how my platform engineering background and systems integration experience can help the Zurich team."

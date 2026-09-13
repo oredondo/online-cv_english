@@ -29,6 +29,14 @@
     </div><!--//details-->
     {% endif %}
 
+    {% if experience.tech %}
+    <div class="tech-stack">
+      {% for t in experience.tech %}
+      <span class="tech-tag">{{ t }}</span>
+      {% endfor %}
+    </div><!--//tech-stack-->
+    {% endif %}
+
   </div><!--//item-->
   {% endfor %}
 

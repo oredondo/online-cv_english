@@ -1,45 +1,133 @@
-@media print
-   {
+@media print {
     @page {
         size: A4;
+        margin: 10mm 12mm;
     }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
     body {
-       font-size: 12pt;
+        font-size: 11pt;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif !important;
+        background: #ffffff !important;
+    }
+
+    /* Use system fonts in print to avoid embedding large web fonts */
+    body, h1, h2, h3, h4, h5, h6,
+    p, li, span, div, a, td, th,
+    .name, .details, .summary, .intro,
+    .contact-list, .container-block-title,
+    .upper-row, .job-title, .degree,
+    .cert-name, .project-title {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .tagline, code, pre {
+        font-family: 'Courier New', Courier, monospace !important;
     }
 
     img.avatar {
-        filter: grayscale(1);
-        -webkit-filter: greyscale(1);
+        filter: none;
+        -webkit-filter: none;
     }
-   .main-wrapper .time {
-       float: right;
-        color: black !important;
-        -webkit-print-color-adjust: exact; 
-   }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 100%;
+        box-shadow: none;
+        overflow: visible;
+        padding: 0 !important;
+    }
+
     .sidebar-wrapper {
+        width: 30%;
+        flex-shrink: 0;
+        order: 2;
+        overflow: visible;
+    }
+
+    .main-wrapper {
+        width: 70%;
+        flex: 1;
+        padding: 20px;
+        order: 1;
+        overflow: visible;
+
+        .section {
+            margin-bottom: 22px !important;
+        }
+
+        .summary p {
+            margin-bottom: 8px !important;
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+
+
+    .main-wrapper .time,
+    .main-wrapper .cert-url {
         position: static;
-        float: right;
-        width: 40%;
-        -webkit-print-color-adjust: exact; 
+        margin-left: auto;
+        white-space: nowrap;
+        color: $text-grey !important;
+    }
+
+    .main-wrapper .upper-row,
+    .main-wrapper .second-upper-row {
+        overflow: visible;
     }
 
     .remove-container.container-block {
-       display: none;
+        display: none;
     }
 
-    footer {
-       display: none;
+    footer,
+    .pdf-btn,
+    .screen-only,
+    .letter-cv-link {
+        display: none !important;
     }
 
-    .skillset .level-bar-inner {
-       background-color: black !important;
-       -webkit-print-color-adjust: exact; 
+    .print-only {
+        display: block !important;
     }
 
-   .fa-inverse,
-   .fa-inverse:after,
-   .fa-inverse:before {
-     color: #ffffff !important;
-   }
+    .experiences-section .item,
+    .projects-section .item,
+    .certifications-section .item,
+    .sidebar-skill-category,
+    .education-container .item,
+    .languages-container,
+    .interests-container,
+    .letter-sign {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
 
+    .projects-section,
+    .experiences-section,
+    .certifications-section {
+        overflow: visible;
+    }
+
+    h2, .container-block-title, .section-title {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    .fa-inverse,
+    .fa-inverse:after,
+    .fa-inverse:before {
+        color: #ffffff !important;
+    }
 }
+

@@ -33,6 +33,12 @@ p {
   line-height: 1.5;
 }
 
+.main-wrapper {
+  .summary, .details, .project-tagline, .intro p {
+    text-align: justify;
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -65,11 +71,13 @@ p {
     margin-bottom: 10px;
   }
   .tagline {
-    color: rgba(256, 256, 256, 0.6);
-    font-size: 16px;
+    color: rgba(256, 256, 256, 0.75);
+    font-size: 12px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
+    letter-spacing: 0.3px;
   }
   .profile {
     margin-bottom: 15px;
@@ -79,9 +87,9 @@ p {
     //used for profile image
     max-width: 100px;
     margin-bottom: 15px;
-    border: 0px solid #fff;
+    border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 2px 8px rgba(0, 0, 0, 0.3);
   }
   .contact-list {
     .fas,
@@ -148,6 +156,44 @@ p {
     }
   }
 
+  .skills-sidebar-container {
+    .container-block-title {
+      .fas { margin-right: 6px; }
+    }
+  }
+
+  .sidebar-skill-category {
+    margin-bottom: 18px;
+
+    .sidebar-skill-category-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: rgba(255, 255, 255, 0.5);
+      margin: 0 0 8px 0;
+
+      .fas { margin-right: 5px; }
+    }
+
+    .sidebar-skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  }
+
+  .sidebar-skill-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
+  }
+
   .interests-list {
     margin-bottom: 0;
     li {
@@ -174,8 +220,16 @@ p {
     margin-bottom: 20px;
   }
   .section {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
+
+  .summary p {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
 
   .experiences-section,
   .educations-section {
@@ -227,7 +281,9 @@ p {
       margin-bottom: 30px;
     }
     .item {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      border-left: 3px solid lighten($theme-color, 35%);
+      padding-left: 15px;
     }
   }
 
@@ -253,22 +309,103 @@ p {
 }
 
 .skillset {
-  .item {
-    margin-bottom: 15px;
-    overflow: hidden;
+  .skill-category {
+    margin-bottom: 22px;
+
+    .skill-category-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $text-grey;
+      margin-bottom: 8px;
+      margin-top: 0;
+      .fas { margin-right: 5px; }
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
   }
-  .level-title {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 12px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: $smoky-white;
+  border: 1px solid $divider;
+  color: $text-color-secondary;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: lighten($theme-color, 60%);
+  color: darken($theme-color, 5%);
+  border: 1px solid lighten($theme-color, 45%);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-weight: 600;
+}
+
+.print-only { display: none; }
+.screen-only { display: block; }
+
+.full-cv-note {
+  font-size: 10px;
+  opacity: 0.75;
+}
+
+.projects-web-note {
+  font-size: 11px;
+  color: $text-grey;
+  margin-bottom: 15px;
+  font-style: italic;
+
+  .fas {
+    margin-right: 4px;
   }
-  .level-bar {
-    height: 12px;
-    background: $smoky-white;
+
+  a {
+    color: $text-grey;
   }
-  .level-bar-inner {
-    height: 12px;
-    background: lighten($theme-color, 15%);
+}
+
+.pdf-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: $theme-color;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  transition: background 0.2s;
+
+  .fas {
+    margin-right: 6px;
+  }
+
+  &:hover {
+    background: darken($theme-color, 8%);
   }
 }
 
