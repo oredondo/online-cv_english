@@ -10,9 +10,18 @@
     {{ career-profile.title }}
   </h2>
 
+  {% if career-profile.summary_short %}
+  <div class="summary screen-only">
+    {{ career-profile.summary | markdownify }}
+  </div>
+  <div class="summary print-only">
+    {{ career-profile.summary_short | markdownify }}
+  </div>
+  {% else %}
   <div class="summary">
     {{ career-profile.summary | markdownify }}
-  </div><!--//summary-->
+  </div>
+  {% endif %}
     
 </section><!--//section-->
 {% endif %}

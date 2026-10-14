@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Oscar Redondo
-    tagline: Senior Infrastructure & Platform Engineer · Python · DevOps & Automation
+    tagline: Senior Platform & Applied AI Systems Engineer · Python · DevOps & Automation
     avatar:   #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -57,25 +57,34 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-        Senior Infrastructure & Platform Engineer with 10+ years of experience building automation-first
-        internal platforms in Python — systems that eliminate manual processes, connect teams, and let
-        organisations scale without adding headcount. I don't just build systems — I conceive, design,
-        and own them end-to-end, from architecture decisions to production reliability.
+        Senior Platform & Applied AI Systems Engineer with 10+ years of experience architecting high-scale
+        internal platforms, distributed automation engines, and production-grade agentic workflows in Python.
+        My core engineering philosophy centers on turning complex distributed infrastructure into invisible,
+        self-service developer abstractions — building declarative orchestration engines, driver patterns, and
+        deterministic AI systems that eliminate operational bottlenecks and enable engineering organizations to scale.
 
-        My work at BBVA has been defined by building internal platforms that shift how the organisation
-        operates: replacing manual processes with automation, eliminating team bottlenecks by making underlying infrastructure effectively invisible to end users through self-service abstractions, generating audit data pipelines consumed by internal stakeholders, and
-        bringing AI-driven operational intelligence to CI/CD infrastructure — such as **Orion AI**, an
-        agentic auto-diagnostic system (LangGraph/ReAct) that reduces MTTR from hours to seconds.
+        As the sole architect and owner of BBVA’s central IaaS platform suite (Orion & Blueprint), I conceived and
+        built the systems governing 30,000+ machines across AWS, OpenStack, OpenShift, and on-premises environments,
+        processing 40,000+ daily operations for 500+ engineers. Designed the underlying data and query architecture
+        (PostgreSQL, MongoDB, Redis) to support high-throughput operations, massive auditing exports, and strict
+        regulatory compliance, while engineering custom asynchronous YAML engines that eliminated enterprise vendor
+        lock-in (avoiding proprietary suites like Red Hat Automation Platform).
 
-        I believe in designing systems that are **simple to use but powerful underneath** — where infrastructure complexity is made completely invisible behind clean abstractions (like declarative YAML blueprints in our **automation suite**, agentic workflow graphs, driver patterns, agnostic pipelines) so that engineers across the organisation can move faster and with zero friction.
-
-        Currently serving **500+ engineers** daily across a platform that processes **40,000+ operations/day**
-        across **30,000+ machines**. Seeking Senior Platform Engineering, Infrastructure, SRE, or Systems Architect roles.
+        At the intersection of platform engineering and applied AI, I pioneer reliable, agentic systems grounded in
+        rigorous software engineering standards. Architected Orion AI (LangGraph/ReAct) to automate root-cause CI/CD
+        diagnostics and slash MTTR from hours to seconds under strict deterministic guardrails, and design multimodal
+        agentic pipelines leveraging LangGraph DAGs, Model Context Protocol (MCP), vector databases, and Whisper speech
+        processing. Experienced in driving technical architecture across international engineering teams in Mexico and
+        Turkey, establishing deployment standards, and mentoring engineers in platform and automation best practices.
     summary_short: |
-        Senior Infrastructure & Platform Engineer with 10+ years of experience in Python, DevOps, and
-        automation. Owner and sole architect of BBVA's internal IaaS & operational AI platform suite (Orion, Orion AI & automation suite) — making underlying infrastructure completely invisible to **500+ engineers** daily across **30,000+ machines** and **40,000+ daily operations**.
+        Senior Platform & Applied AI Systems Engineer with 10+ years of experience architecting internal developer
+        platforms, distributed automation engines, and agentic workflows in Python. Sole architect of BBVA's central
+        IaaS platform suite (Orion & Blueprint), managing 30,000+ machines and 40,000+ daily operations for 500+ engineers
+        through clean, self-service abstractions and high-throughput data architectures.
 
-        Specialised in building governance-driven self-service platforms, automated failure diagnostics, audit data pipelines, and environment-agnostic tooling. Seeking Senior Platform, Infrastructure, SRE, or Systems Integration roles.
+        Pioneers production-grade operational AI, having architected the Orion AI agentic diagnostic engine
+        (LangGraph/ReAct) and multimodal systems using Model Context Protocol (MCP), vector databases, and deterministic
+        guardrails to turn complex infrastructure operations into autonomous, reliable workflows.
 
 
 
@@ -100,9 +109,8 @@ experiences:
           Owner and sole architect of BBVA's internal IaaS & operational AI platform suite (Orion, Orion AI & automation suite) — critical systems that today
           form the backbone of infrastructure operations across the entire organisation, serving 500+
           engineers and processing 40,000+ daily operations across 30,000+ machines.
-          Led all technical decisions end-to-end: system architecture, API design, data modelling,
-          async processing, deployment strategy, and long-term evolution of the platform — making underlying multi-environment infrastructure effectively invisible to platform users while preserving 100% auditability.
-          Conceived, designed, and built **Orion AI** integrated into FONIL — an agentic operational AI system (LangGraph, ReAct, Qwen LLM) that automates CI/CD failure diagnostics, reducing MTTR from hours to seconds and eliminating manual log triage.
+          Led all technical decisions end-to-end: system architecture, API design, database modeling and schema management across MongoDB and PostgreSQL, massive query execution, async processing, deployment strategy, and long-term evolution of the platform — making underlying multi-environment infrastructure effectively invisible to platform users while preserving 100% auditability.
+          Conceived, designed, and developed **Orion AI** as a validated PoC for FONIL — an agentic operational AI system (LangGraph, ReAct, Qwen LLM) to automate CI/CD failure diagnostics and log triage; prototype tested and prepared, pending integration guidelines for central AI infrastructure.
           Conceived, designed, and built our **automation suite** (Blueprint) as a declarative, asynchronous Python orchestration engine using custom YAML blueprints (conceptually similar to Terraform), enabling teams to manage the full infrastructure lifecycle and eliminating the need for commercial suites like Red Hat Automation Platform.
           Defined a **deployment philosophy and engineering standards** adopted organisation-wide,
           establishing how infrastructure is provisioned, audited, and governed across all environments.
@@ -114,14 +122,14 @@ experiences:
           a common engineering culture around infrastructure automation and platform best practices.
           Managed the technical integration of our platform stack across international teams in Mexico and Turkey — running onboarding sessions, providing cross-team support, and developing specific platform enhancements to streamline their integration.
         details_short: |
-          Owner and sole architect of BBVA's IaaS & AI platform suite (Orion, Orion AI & automation suite) — making infrastructure invisible to 500+ engineers across 30,000+ machines.
+          Owner and sole architect of BBVA's IaaS platform suite (Orion & automation suite) — leading database modeling, massive query management, and making infrastructure invisible to 500+ engineers across 30,000+ machines.
 
-          Architected Orion AI (LangGraph/ReAct) for automated CI/CD failure diagnostics, drastically reducing MTTR.
+          Developed the Orion AI PoC (LangGraph/ReAct) for automated CI/CD diagnostics, ready for integration with shared AI infrastructure.
           Designed Blueprint as an asynchronous YAML orchestration engine, avoiding proprietary vendor lock-in (Red Hat Automation Platform).
           Led platform architecture, API design, and organization-wide deployment standards.
           Managed the integration and onboarding of international teams in Mexico and Turkey, developing custom platform enhancements.
           Managed production incidents at banking scale; mentored engineers and drove cross-team knowledge sharing.
-        tech: [Python, Django, DRF, Celery, MongoDB, PostgreSQL, Redis, LangChain, LangGraph, ReAct Agents, Ansible, Jenkins, GitLab CI, AWS, OpenStack, OpenShift, Kubernetes, Docker, Podman, Groovy, Infoblox, F5]
+        tech: [Python, Django, DRF, Celery, MongoDB, PostgreSQL, Redis, Data Modeling, Massive Query Optimization, Audit Data Pipelines, LangChain, LangGraph, ReAct Agents, Whisper, Ansible, Jenkins, GitLab CI, AWS, OpenStack, OpenShift, Kubernetes, Docker, Podman, Groovy, Infoblox, F5]
 
 
       - role: OpenStack Administrator & Developer
@@ -142,8 +150,36 @@ experiences:
           
 
 certifications:
-      title: Certifications
+      title: "Certifications & Training"
       list:
+        - name: "Complete MCP Developer Guide: Agents, Servers, & Tools"
+          start: 2026
+          end: ""
+          organization: Udemy
+          details: |
+            Model Context Protocol (MCP) architecture, tool-calling integration, custom servers, and multi-agent connectivity.
+
+        - name: "Curso Completo: LangChain, LangGraph y Agentes de IA con Python"
+          start: 2026
+          end: ""
+          organization: Udemy
+          details: |
+            Stateful multi-agent workflows, cyclic graph orchestration with LangGraph, and autonomous ReAct agent design.
+
+        - name: "Curso Completo de Spec-Driven Development (SDD) y Agentes IA"
+          start: 2026
+          end: ""
+          organization: Udemy
+          details: |
+            Specification-first development methodologies and deterministic prompt-to-code workflows for AI agents.
+
+        - name: "Curso Completo: Bases de Datos Vectoriales para IA Generativa"
+          start: 2026
+          end: ""
+          organization: Udemy
+          details: |
+            Vector embeddings, similarity search, indexing strategies, and enterprise RAG architectures.
+
         - name: Developing Secure Software (LFD121)
           start: 2025
           end: ""
@@ -163,65 +199,58 @@ projects:
 
     assignments:
       - title: "Orion — IaaS Audit & Deployment Platform (BBVA)"
-        tagline: "Ideated, architected, and built from scratch as sole owner. Orion is BBVA’s central IaaS platform for infrastructure governance, auditing, and deployment — managing 30,000+ machines across AWS, OpenStack, OpenShift, on-premise, and physical environments, processing 40,000+ daily operations. Abstracted away underlying multi-environment complexity, making infrastructure effectively invisible to platform users while keeping every action fully audited with real-time traceability. Generates automated audit data exports (CSV pipelines) consumed directly by internal auditors and compliance stakeholders, turning raw operational data into structured, actionable reports. Centralises permissions management, product catalogues, and remediation workflows. Exposes a Swagger/OpenAPI-documented REST API that connects with other core bank systems, enabling a self-service deployment model actively used by 500+ engineers. Built with Python, Django, Django REST Framework, MongoDB, PostgreSQL, and Celery."
-        tagline_short: "Sole owner and architect of BBVA’s central IaaS platform — making multi-environment infrastructure invisible to 500+ engineers while maintaining full audit traceability across 30,000+ machines and 40,000+ daily operations."
+        tagline: "Ideated, architected, and built from scratch as sole owner. Orion is BBVA’s central IaaS platform for infrastructure governance, auditing, and deployment — managing 30,000+ machines across AWS, OpenStack, OpenShift, on-premise, and physical environments, processing 40,000+ daily operations. Designed and managed the entire data architecture (MongoDB, PostgreSQL, Redis), defining optimized data schemas, handling massive querying across tens of thousands of assets, and generating automated audit data exports (CSV pipelines) consumed directly by internal auditors and compliance stakeholders, turning raw operational data into structured, actionable reports. Centralises permissions management, product catalogues, and remediation workflows. Exposes a Swagger/OpenAPI-documented REST API that connects with other core bank systems, enabling a self-service deployment model actively used by 500+ engineers. Built with Python, Django, Django REST Framework, MongoDB, PostgreSQL, and Celery."
+        tagline_short: "Ideated, architected, and built as sole owner BBVA's central IaaS platform, managing 30,000+ machines across AWS, OpenStack, OpenShift, and on-premises environments with 40,000+ daily operations. Designed the full data architecture (PostgreSQL, MongoDB, Redis) to optimize high-volume querying and automated compliance audit pipelines. Exposes a Swagger/OpenAPI REST API powering a self-service model used by 500+ engineers."
 
 
-      - title: "Orion AI — Operational AI & Auto-Diagnostic Engine for CI/CD (BBVA)"
-        tagline: "Architected and integrated Orion AI into the FONIL platform, building a parallel, multi-agent orchestration pipeline using LangGraph and ReAct agents to automate root-cause failure analysis in CI/CD infrastructure. Concurrently aggregates Jenkins logs, Redis-cached support documentation, and business context, while dynamically querying GitLab repositories and commit diffs with high-context LLMs (Qwen 131k context) under strict, deterministic guardrails. This auto-diagnostic system transformed infrastructure operations by drastically reducing Mean Time to Resolution (MTTR) from hours to seconds per incident, eliminating manual log triage, filtering operational noise, and enabling self-service troubleshooting across engineering teams."
-        tagline_short: "Operational AI system built with LangGraph and ReAct agents to automate CI/CD failure diagnostics in FONIL. Concurrently analyzes Jenkins logs, GitLab diffs, and support docs using high-context LLMs, drastically reducing MTTR and manual operational triage."
+      - title: "Orion AI — Operational AI & Auto-Diagnostic Engine for CI/CD (BBVA - PoC)"
+        tagline: "Architected and developed a functional Proof of Concept (PoC) for Orion AI to integrate into FONIL, evaluating a parallel, multi-agent orchestration pipeline using LangGraph and ReAct agents to automate root-cause failure analysis in CI/CD infrastructure. Concurrently aggregates Jenkins logs, Redis-cached support documentation, and business context, while dynamically querying GitLab repositories and commit diffs with high-context LLMs (Qwen 131k context) under strict, deterministic guardrails. This auto-diagnostic prototype reduces Mean Time to Resolution (MTTR) from hours to seconds per incident, eliminating manual log triage; fully validated and prepared, currently awaiting definitions on how to leverage internal AI infrastructure dependent on partner platform teams before wider rollout."
+        tagline_short: "Architected a validated agentic AI PoC for FONIL, implementing a parallel multi-agent pipeline with LangGraph and ReAct loops to automate root-cause CI/CD failure analysis. Concurrently analyzes Jenkins logs, Redis-cached support docs, and GitLab diffs using high-context LLMs under strict deterministic guardrails, slashing MTTR from hours to seconds."
 
-      - title: "OmniLecture Studio — Multimodal AI & Voice Processing Desktop Suite (Personal Project)"
-        tagline: "Architected and built a native Linux (GNOME/Wayland, GTK 3) multimodal AI study and dictation suite in Python. Coordinates multi-node processing graphs using LangGraph to process class recordings, audio dictations, and notebook photographs. Features a dual speech recognition engine combining local on-device transcription with faster-whisper (CPU int8 quantization, anti-OOM) alongside cloud API fallbacks. Builds multimedia streaming and capture pipelines via GStreamer, PipeWire / PulseAudio, D-Bus, and OpenCV with Tesseract OCR, producing structured Markdown study notes, Word documents, and Anki flashcards under strict anti-hallucination prompts."
-        tagline_short: "Native Linux multimodal AI suite built with LangGraph, GStreamer/PipeWire audio capture, and local faster-whisper (CPU int8) speech recognition for automated notes and Anki flashcard generation."
+      - title: "OmniLecture Studio — Multimodal Agentic AI Suite (Personal Project)"
+        tagline: "Multimodal agentic AI suite in Python that transforms unstructured multimedia into structured knowledge. Coordinates LangGraph workflows to fuse speech recognition (dual local and cloud Whisper models), slide OCR, and handwritten notes into comprehensive study summaries and Anki flashcards, backed by domain-aware prompting and strict anti-hallucination guardrails."
+        tagline_short: "Engineered a native Linux multimodal AI suite in Python, coordinating multi-node LangGraph workflows to ingest, transcribe, and synthesize disparate lecture media. Features dual-engine speech recognition (local CPU Whisper with int8 quantization alongside cloud APIs) with domain-specific prompting, OpenCV slide/handwriting extraction, and automated generation of structured Markdown notes and Anki flashcards under strict zero-hallucination guardrails."
 
       - title: "Blueprint — Asynchronous Infrastructure Provisioning & Lifecycle Engine (BBVA)"
         tagline: "Designed and built Blueprint (navi_blueprint) — an internal tool written in Python with a fully asynchronous architecture, conceptually analogous to Terraform, where teams declare their entire infrastructure in versioned YAML blueprints and the engine handles the rest. Successfully eliminated the need for proprietary commercial suites like Red Hat Automation Platform (Ansible Tower). Deeply integrated with Orion, BBVA's internal infrastructure platform, the tool orchestrates parallel provisioning and job execution while maintaining full auditability — every run produces a structured report with complete Orion job traceability, even when failures occur mid-execution. Beyond creation, the engine manages the full infrastructure lifecycle, supporting idempotent destroy operations that safely resume partial teardowns without re-processing already-completed steps. The result is a production-grade orchestration engine that brings the declarative, reproducible infrastructure philosophy of Terraform to BBVA's internal platform, empowering multiple teams to provision, manage, and safely decommission complex environments from a single source of truth."
-        tagline_short: "Asynchronous Python orchestration engine conceptually similar to Terraform. Teams declare complex environments via YAML blueprints. Successfully avoided proprietary enterprise licensing (Red Hat Automation Platform) while delivering idempotent lifecycle management and full Orion audit traceability."
+        tagline_short: "Conceived and built an asynchronous Python orchestration engine conceptually similar to Terraform, enabling engineering teams to declare complete infrastructure in versioned YAML blueprints. Fully integrated with Orion to execute parallel provisioning with comprehensive audit tracking, while supporting idempotent destroy operations that safely resume partial teardowns without rework, successfully eliminating costly commercial platform licensing (Red Hat Automation Platform)."
 
       - title: "Self-Service Deployment Pipeline (BBVA)"
         tagline: "Engineered a universal deployment pipeline in Django built around a driver pattern: each infrastructure flavour (AWS, OpenStack, on-premise, physical) is abstracted behind a common interface, so the same codebase deploys to any environment by simply swapping the driver. Beyond the technical design, defined the deployment philosophy and engineering principles that govern how infrastructure is provisioned organisation-wide — enabling development teams to ship artefacts to production autonomously, with no infrastructure team intervention required."
-        tagline_short: "Universal deployment pipeline in Django using a driver pattern — one codebase deploys to any environment (AWS, OpenStack, on-premise, physical) by swapping the driver. Defined the organisation-wide deployment philosophy enabling full developer self-service."
+        tagline_short: "Architected a universal Django deployment pipeline built around a modular driver pattern, allowing the exact same codebase to target AWS, OpenStack, OpenShift, and on-premises environments by swapping drivers. Established organization-wide deployment principles and self-service standards that eliminated manual infrastructure intervention and empowered engineering teams to ship autonomously."
 
       - title: "Configuration Management System (BBVA)"
         tagline: "Built a centralised configuration management system that decouples variable management from playbook logic, allowing engineers to write environment-agnostic Ansible roles that work across development, staging, and production without modification. The system automatically resolves and injects the correct variables per target environment at deploy time — eliminating duplicated configuration sets, reducing human error, and making the entire infrastructure codebase significantly easier to maintain."
-        tagline_short: "Centralised system that decouples variable management from playbook logic, automatically injecting the correct configuration per environment at deploy time. Engineers write once, deploy anywhere."
+        tagline_short: "Engineered a centralised configuration management platform that completely decouples variable resolution from playbook logic. Dynamically resolves and injects environment-specific variables at runtime across development, staging, and production environments, eliminating duplicated configuration repositories, preventing human deployment error, and ensuring zero configuration drift across hybrid cloud assets."
 
       - title: "Jenkins to Custom Dispatcher Migration (BBVA)"
         tagline: "Led the strategic migration away from Jenkins by designing and building a purpose-built operation dispatcher in Django and Celery. The dispatcher runs in High Availability and exposes a REST API (Swagger/OpenAPI) for programmatic operation triggering and monitoring. Eliminated vendor lock-in, reliability bottlenecks, and the usability constraints imposed by Jenkins — giving the team full control over execution flow, retry logic, and observability. This project was the natural evolution of the Jenkins Shared Libraries framework, replacing it entirely."
-        tagline_short: "Replaced Jenkins with a purpose-built Django/Celery dispatcher running in HA, exposing a REST API for operation control. Eliminated vendor lock-in and reliability issues, delivering full observability and retry logic."
+        tagline_short: "Led the strategic migration away from Jenkins by designing a high-availability, purpose-built operation dispatcher in Django and Celery. Exposes a Swagger-documented REST API for programmatic execution, custom retry flows, and granular telemetry, successfully eliminating third-party automation bottlenecks, reliability issues, and vendor constraints across internal platform workflows."
 
       - title: "Ansible Infrastructure & Services Management (BBVA)"
         tagline: "Owns and maintains the full Ansible codebase that provisions and configures BBVA’s internal infrastructure services — including Artifactory, GitLab, Jenkins, and other shared platforms used by engineering teams across the organisation. All roles are designed to be environment-agnostic, consuming variables from the Configuration Management System automatically. Keeps all services consistently deployed and configured across environments, with full traceability and minimal manual intervention."
-        tagline_short: "Full Ansible codebase for provisioning BBVA’s shared internal services (Artifactory, GitLab, Jenkins). Environment-agnostic roles powered by the Configuration Management System, ensuring consistency and zero configuration drift."
+        tagline_short: "Owns and maintains the complete Ansible automation codebase governing BBVA's critical shared developer infrastructure, including Artifactory, GitLab, and Jenkins clusters. Engineered environment-agnostic roles powered by dynamic variable injection, guaranteeing 100% reproducible deployments, complete auditability, and zero drift across banking environments."
 
       - title: "Kubernetes Job Execution Engine (BBVA)"
         tagline: "Extended the deployment pipeline to support containerised automation execution via Kubernetes Jobs, enabling any automation or operation to run as an isolated, ephemeral container within the cluster. Fully integrated with the existing deployment philosophy and the Configuration Management System — the correct environment variables are resolved and injected automatically at runtime, keeping automations environment-agnostic by design. Replaced long-running processes and ad-hoc script execution with a scalable, observable, and self-contained execution model, bringing the same governance and traceability standards of Orion to the automation layer."
-        tagline_short: "Containerised automation execution engine via Kubernetes Jobs, integrated with the Configuration Management System for automatic variable injection. Replaced ad-hoc scripts with a scalable, observable, and governed execution model."
+        tagline_short: "Extended the platform deployment pipeline to support containerised automation via Kubernetes Jobs, executing any infrastructure workflow as an isolated, ephemeral container. Seamlessly integrates with the Configuration Management System for runtime variable injection, replacing long-running legacy scripts with an observable, auditable, and horizontally scalable execution model."
 
       - title: "Jenkins Shared Libraries & Pipeline Framework (BBVA)"
         tagline: "Developed a library of reusable Jenkins pipelines and shared Groovy libraries that became the CI/CD standard across multiple infrastructure teams — reducing pipeline duplication and accelerating team onboarding. This framework later served as the foundation that exposed the limitations of Jenkins at scale, directly motivating the migration to the custom dispatcher."
-        tagline_short: "Reusable Jenkins pipeline library adopted as CI/CD standard across infrastructure teams. Later served as the foundation that motivated the full migration to the custom dispatcher."
+        tagline_short: "Designed and maintained a modular framework of reusable Jenkins pipelines and shared Groovy libraries that unified CI/CD standards across multiple infrastructure teams. Drastically cut pipeline duplication and onboarding time, while establishing the architectural performance benchmarks that directly shaped the requirements for the custom Django/Celery dispatcher."
 
       - title: "F5 / OpenStack API Bridge (BBVA)"
         tagline: "After the native F5 Load Balancer integration with OpenStack was officially deprecated, built a custom RESTful API to restore full interoperability between both systems. Delivered with zero downtime, ensuring uninterrupted load balancing operations across the bank’s infrastructure without requiring a disruptive platform migration."
-        tagline_short: "Custom RESTful API bridging F5 Load Balancer and OpenStack after native integration was deprecated. Delivered with zero downtime, maintaining uninterrupted banking operations."
+        tagline_short: "Developed a custom high-performance RESTful API bridge restoring interoperability between F5 Load Balancers and OpenStack following the official deprecation of their native integration. Designed and deployed with zero banking downtime, ensuring uninterrupted automated traffic balancing across critical financial services."
 
       - title: "WrenchBuddy — AI Vehicle Maintenance Assistant (Personal Project)"
         tagline: "Personal project built with Python, Django, and LangChain. WrenchBuddy uses AI agents to analyse vehicle maintenance invoices — automatically extracting and storing what was serviced, replaced, or repaired for each vehicle. A conversational chat interface then allows the user to ask natural-language questions about maintenance history and upcoming service requirements, with the agents reasoning over the stored data to provide accurate, context-aware answers. Covers both car and motorbike maintenance tracking."
-        tagline_short: "Personal Django/LangChain app with AI agents that parse maintenance invoices and power a chat interface for vehicle service history and upcoming maintenance queries."
+        tagline_short: "Personal Django and LangChain application utilizing autonomous AI agents to parse and structure automotive and motorcycle maintenance invoices. Features a conversational chat interface with RAG that answers natural-language queries regarding maintenance history, costs, and scheduled service intervals based on extracted records."
 
-      - title: "ESP32 Bluetooth Motorcycle Navigation Controller (Hardware & IoT Project)"
-        screen_only: true
-        tagline: "Designed and built a custom physical handlebar controller powered by an ESP32 microcontroller, communicating over Bluetooth Low Energy (BLE HID) to safely control a navigation tablet on a motorbike while riding. Handled power regulation, circuit soldering, hardware switch debouncing, and low-level firmware programming."
-
-      - title: "Self-Hosted Village Heating Automation (IoT / Raspberry Pi 2)"
-        screen_only: true
-        tagline: "Built a custom self-hosted home automation web system in Python and Django running on a Raspberry Pi 2, controlling physical GPIO relay boards to remotely monitor and regulate family home heating. In continuous, rock-solid production for nearly 10 years with 100% uptime and zero cloud dependencies."
 
       - title: "Private Cloud Storage Platform (Oesia)"
         tagline: "Built a self-hosted cloud storage application — conceptually equivalent to Dropbox — on top of OpenStack Swift object storage, providing internal teams with secure and scalable file storage and sharing capabilities without reliance on public cloud providers. Administered the underlying OpenStack and Ceph infrastructure to ensure platform availability and performance."
-        tagline_short: "Self-hosted cloud storage platform (Dropbox-equivalent) built on OpenStack Swift, providing secure and scalable internal file storage without public cloud dependency."
+        tagline_short: "Architected and deployed an internal private cloud storage application conceptually equivalent to Dropbox, built on top of OpenStack Swift object storage and Ceph distributed clusters. Provided secure, scalable enterprise file sharing without public cloud dependencies while managing underlying private cloud infrastructure."
 
 skills:
     title: Skills &amp; Tech Stack
@@ -267,8 +296,6 @@ skills:
           - ArgoCD
           - GitOps
           - Linux
-          - Embedded Linux & Raspberry Pi
-          - ESP32 / Microcontrollers & IoT
           - Ceph
           - Nginx
           - Apache
@@ -280,6 +307,9 @@ skills:
           - PostgreSQL
           - MongoDB
           - Redis
+          - Data Modeling & Schema Design
+          - Massive Query Optimization
+          - Audit & Data Pipelines
           - RabbitMQ
           - Swift (Object Storage)
           - AWS S3
@@ -315,12 +345,16 @@ skills:
         items:
           - LangChain
           - LangGraph
+          - Multi-Agent Systems
           - ReAct Agents
           - Model Context Protocol (MCP)
-          - Whisper / faster-whisper (CPU int8)
+          - Tool Calling & Function Calling
+          - Spec-Driven Development (SDD)
+          - Whisper
           - Audio & Speech Processing
           - RAG (Retrieval-Augmented Generation)
           - Vector Databases
+          - Vector Embeddings & Semantic Search
           - Ollama
           - vLLM
           - Claude (Anthropic)
