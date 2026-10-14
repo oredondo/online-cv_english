@@ -23,10 +23,17 @@
 
     </div><!--//meta-->
 
-    {% if experience.details %}
+    {% if experience.details_short %}
+    <div class="details screen-only">
+      {{ experience.details | markdownify }}
+    </div>
+    <div class="details print-only">
+      {{ experience.details_short | markdownify }}
+    </div>
+    {% elsif experience.details %}
     <div class="details">
       {{ experience.details | markdownify }}
-    </div><!--//details-->
+    </div>
     {% endif %}
 
     {% if experience.tech %}
